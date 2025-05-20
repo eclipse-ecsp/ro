@@ -1,0 +1,18 @@
+{
+  "EventID": "RCPDResponse",
+  "Version": "1.0",
+  "Data": {
+    "response": "SUCCESS",
+    "rcpdRequestId": "zmvKoWxzI9g3U7VztcLzWFCNSoeXSbBii",
+    "customExtension": {
+      "response ": "SUCCESS",
+      "serviceId": "zmvKoWxzI9g3U7VztcLzWFCNSoeXSbBii"
+    }
+  },
+  "RequestId": "zmvKoWxzI9g3U7VztcLzWFCNSoeXSbBii",
+  "MessageId": "123456",
+  "VehicleId": "HUTSQGU6HS2949",
+  "Timezone": 0,
+  "CorrelationId": "123456",
+  "BizTransactionId": "7654"
+}

@@ -1,0 +1,33 @@
+{
+  "EventID": "DeviceMessageFailure",
+  "Version": "1.0",
+  "Timestamp": 1538987585951,
+  "Data": {
+    "failedIgniteEvent": {
+      "EventID": "RCPDRequest",
+      "Version": "1.0",
+      "Timestamp": 1538987571484,
+      "Data": {
+        "origin": "RCPDSupportOwner",
+        "userId": "TestUser",
+        "rcpdRequestId": "zmvKoWxzI9g3U7VztcLzWFCNSoeXSbBii"
+      },
+      "RequestId": "zmvKoWxzI9g3U7VztcLzWFCNSoeXSbBii",
+      "VehicleId": "Device123",
+      "Timezone": 0,
+      "MessageId": "2621552",
+      "BizTransactionId": "SessionId2",
+      "DeviceDeliveryCutoff": -1
+    },
+    "retryAttempts": 1,
+    "shoudlerTapRetryAttempts": 0,
+    "deviceDeliveryCutoffExceeded": false,
+    "deviceStatusInactive": false,
+    "errorCode": "DEVICE_STATUS_INACTIVE"
+  },
+  "RequestId": "zmvKoWxzI9g3U7VztcLzWFCNSoeXSbBii",
+  "Timezone": 0,
+  "MessageId": "2621553",
+  "BizTransactionId": "SessionId2",
+  "DeviceDeliveryCutoff": -1
+}

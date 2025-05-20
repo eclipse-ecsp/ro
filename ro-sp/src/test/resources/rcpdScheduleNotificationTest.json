@@ -1,0 +1,28 @@
+{
+  "EventID": "ScheduleNotificationEvent",
+  "Version": "1.0",
+  "Timestamp": 1597740827165,
+  "RequestId": "zmvKoWxzI9g3U7VztcLzWFCNSoeXSbBii",
+  "BizTransactionId": "SessionId2",
+  "Data": {
+    "triggerTimeMs": 1597740827165,
+    "payload": "eyJSZXF1ZXN0SWQiOiJ6bXZLb1d4ekk5ZzNVN1Z6dGNMeldGQ05Tb2VYU2JCaWkiLCJCaXpUcmFuc2FjdGlvbklkIjoiU2Vzc2lvbklkMiIsIlNlcnZpY2VOYW1lIjoicmNwZCJ9",
+    "scheduleIdId": "e1ad0c9b-2911-429a-bc69-5640cb09f339",
+    "duration": 70,
+    "roRequestId": "-\\0274\\302\\3255\\324\\3545K",
+    "origin": "RCPDSupportOwner",
+    "userId": "testUser",
+    "state": "STARTED"
+  },
+  "UserContext": [
+    {
+      "userId": "testdata",
+      "role": "VO"
+    }
+  ],
+  "VehicleId": "Device123",
+  "Timezone": 0,
+  "MessageId": "184195004",
+  "DeviceDeliveryCutoff": -1,
+  "DuplicateMessage": false
+}

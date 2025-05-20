@@ -1,0 +1,15 @@
+{
+  "EventID": "RemoteOperationClimate",
+  "Version": "1.1",
+  "Data": {
+    "state": "ON",
+    "acState": "ON",
+    "temperatureUnit": "CELSIUS",
+    "duration": 75,
+    "temperature": 78,
+    "fanSpeed": 90,
+    "customExtension": {
+    },
+    "roRequestId": "-\\0274\\302\\3255\\324\\3545K"
+  }
+}

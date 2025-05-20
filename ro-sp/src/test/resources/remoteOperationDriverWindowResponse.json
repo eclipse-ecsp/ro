@@ -1,0 +1,14 @@
+{
+  "EventID": "RemoteOperationDriverWindow",
+  "Version": "1.1",
+  "Timestamp": 0,
+  "Data": {
+    "state": "OPENED",
+    "percent": 20,
+    "duration": 70,
+    "roRequestId": "-\\0274\\302\\3255\\324\\3545K"
+  },
+  "RequestId": "Device123-id",
+  "SourceDeviceId": "Device123",
+  "MessageId": "36451"
+}

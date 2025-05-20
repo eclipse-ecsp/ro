@@ -1,0 +1,32 @@
+{
+  "EventID": "CrankNotificationData",
+  "Version": "1.0",
+  "Timestamp": 1454674114815,
+  "Data": {
+    "crankAttempted": true,
+    "longitude": 23.56,
+    "latitude": 56.87,
+    "bearing": 2,
+    "altitude": 10,
+    "horPosError": 4,
+    "customExtension": {
+      "vehicleLocation": {
+        "positionLatitude": 56.87,
+        "estimatedPositionError": 2,
+        "positionAltitude": 10,
+        "positionLongitude": 23.56,
+        "positionDirection": "left",
+        "estimatedAltitudeError": 2,
+        "gpsFixTypeEnum": 0,
+        "isGPSFixNotAvailable": false
+      },
+      "isCrankAttempted": true
+    }
+  },
+  "RequestId": "zmvKoWxzI9g3U7VztcLzWFCNSoeXSbBii",
+  "MessageId": "123456",
+  "VehicleId": "vehicleId",
+  "Timezone": 0,
+  "CorrelationId": "123456",
+  "BizTransactionId": "bizTransactionId"
+}

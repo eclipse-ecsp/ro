@@ -1,0 +1,28 @@
+##############################################################
+#
+# List of approvers/reviewers for RO
+#
+##############################################################
+#
+#
+#
+# Learn about CODEOWNERS file format:
+#  https://help.github.com/en/articles/about-code-owners
+#
+
+# These owners will be the default owners for everything in the repo.
+* @SuyashSrivastava
+
+.gitignore @SuyashSrivastava
+.github @SuyashSrivastava
+.github/* @SuyashSrivastava
+
+eclipse-dash/* @SuyashSrivastava
+images/* @SuyashSrivastava
+
+checkstyle.xml @SuyashSrivastava
+checkstyle-suppressions.xml @SuyashSrivastava
+
+CODEOWNERS @SuyashSrivastava
+*.md @SuyashSrivastava
+

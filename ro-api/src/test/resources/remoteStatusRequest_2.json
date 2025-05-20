@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.1",
+  "roEvent": [
+    "org.eclipse.ecsp.entities.IgniteEventImpl",
+    {
+      "EventID": "RemoteOperationDoors",
+      "Version": "1.1",
+      "Timestamp": 1514764800001,
+      "Data": [
+        "org.eclipse.ecsp.domain.ro.RemoteOperationDoorsV1_1",
+        {
+          "state": "LOCKED",
+          "roRequestId": "P2KvQwet9A28bOrQgxQDcp60xhCP9O9A"
+        }
+      ],
+      "RequestId": "P2KvQwet9A28bOrQgxQDcp60xhCP9O9A",
+      "VehicleId": "6666",
+      "BizTransactionId": "P2KvQwet9A28bOrQgxQDcp60xhCP9O9A"
+    }
+  ]
+}

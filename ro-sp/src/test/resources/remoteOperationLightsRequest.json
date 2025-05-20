@@ -1,0 +1,11 @@
+{
+  "EventID": "RemoteOperationLights",
+  "Version": "1.1",
+  "Data": {
+    "state": "ON",
+    "customExtension": {
+    },
+    "duration": 70,
+    "roRequestId": "-\\0274\\302\\3255\\324\\3545K"
+  }
+}

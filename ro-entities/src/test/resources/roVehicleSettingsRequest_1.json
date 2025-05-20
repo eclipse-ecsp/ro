@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.1",
+  "roEvent": [
+    "org.eclipse.ecsp.entities.IgniteEventImpl",
+    {
+      "EventID": "RemoteOperationVehicleSettings",
+      "Version": "1.1",
+      "Timestamp": 1514764800000,
+      "Data": [
+        "org.eclipse.ecsp.domain.ro.RemoteOperationVehicleSettingsV1_1",
+        {
+          "remotOperationDoorsExecTimeout": 60,
+          "remotOperationDriverDoorExecTimeout": 60,
+          "remotOperationWindowsExecTimeout": 60,
+          "remotOperationDriverWindowExecTimeout": 60,
+          "remotOperationHoodExecTimeout": 60,
+          "remotOperationLiftGateExecTimeout": 60,
+          "remotOperationHornExecTimeout": 60,
+          "remotOperationLightsExecTimeout": 60,
+          "remoteOperationAlarmExecTimeout": 60,
+          "remoteOperationEngineExecTimeout": 60,
+          "remoteOperationClimateExecTimeout": 60
+        }
+      ],
+      "RequestId": "kmpxNPUwqEW69CzK7VmO98BLWpLOqSw1",
+      "VehicleId": "7777",
+      "BizTransactionId": "kmpxNPUwqEW69CzK7VmO98BLWpLOqSw1"
+    }
+  ]
+}
