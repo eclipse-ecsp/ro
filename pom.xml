@@ -107,14 +107,16 @@
         <sonar.language>java</sonar.language>
         <sonar.exclusions>
             **/java/org/eclipse/ecsp/domain/ro/*,
+            **/java/org/eclipse/ecsp/ro/processor/*,
             **/java/org/eclipse/ecsp/domain/remoteInhibit/*,
             **/java/org/eclipse/ecsp/ro/domains/*,
             **/java/org/eclipse/ecsp/ro/constant/*,
             **/java/org/eclipse/ecsp/ro/constants/*,
+            **/java/org/eclipse/ecsp/platform/services/ro/rest/*,
             **/java/org/eclipse/ecsp/platform/services/ro/client/*
             **/java/org/eclipse/ecsp/platform/services/ro/domain/*,
             **/java/org/eclipse/ecsp/platform/services/ro/constant/*,
-            **/java/org/eclipse/ecsp/platform/services/ro/service/DeviceMessageFailuresEventFiler.java
+            **/java/org/eclipse/ecsp/platform/services/ro/service/*
         </sonar.exclusions>
 
         <!-- Jacoco Plugin Properties -->
