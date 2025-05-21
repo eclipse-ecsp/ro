@@ -1,0 +1,563 @@
+[
+  {
+    "schemaVersion": "1.0",
+    "rcpdEvent": [
+      "org.eclipse.ecsp.entities.IgniteEventImpl",
+      {
+        "EventID": "RCPDRequest",
+        "Version": "1.0",
+        "RequestId": "38f20cb3-cdfa-45e5-8a3a-4e6e3087a914",
+        "UserContext": [
+          "java.util.List",
+          [
+            {
+              "userId": "testdata",
+              "role": "VO"
+            }
+          ]
+        ],
+        "Timestamp": 1555766056000,
+        "Data": [
+          "org.eclipse.ecsp.domain.ro.RCPDRequestV1_0",
+          {
+            "origin": "SelfManage",
+            "userId": "testdata",
+            "rcpdRequestId": "38f20cb3-cdfa-45e5-8a3a-4e6e3087a914"
+          }
+        ],
+        "VehicleId": "12345678"
+      }
+    ],
+    "rcpdResponseList": [
+      "java.util.List",
+      [
+        [
+          "org.eclipse.ecsp.entities.IgniteEventImpl",
+          {
+            "EventID": "RCPDResponse",
+            "Version": "1.0",
+            "Timestamp": 42323242342344,
+            "Data": [
+              "org.eclipse.ecsp.domain.ro.RCPDResponseV1_0",
+              {
+                "response": "SUCCESS",
+                "rcpdRequestId": "38f20cb3-cdfa-45e5-8a3a-4e6e3087a914"
+              }
+            ],
+            "VehicleId": "12345678"
+          }
+        ]
+      ]
+    ]
+  },
+  {
+    "schemaVersion": "1.0",
+    "rcpdEvent": [
+      "org.eclipse.ecsp.entities.IgniteEventImpl",
+      {
+        "EventID": "RCPDRequest",
+        "Version": "1.0",
+        "RequestId": "74125911-7a89-41be-b3e6-831b5fca27a4",
+        "UserContext": [
+          "java.util.List",
+          [
+            {
+              "userId": "testdata",
+              "role": "VO"
+            }
+          ]
+        ],
+        "Timestamp": 1555766066000,
+        "Data": [
+          "org.eclipse.ecsp.domain.ro.RCPDRequestV1_0",
+          {
+            "origin": "SelfManage",
+            "userId": "testdata",
+            "rcpdRequestId": "74125911-7a89-41be-b3e6-831b5fca27a4"
+          }
+        ],
+        "VehicleId": "12345678"
+      }
+    ],
+    "rcpdResponseList": [
+      "java.util.List",
+      [
+        [
+          "org.eclipse.ecsp.entities.IgniteEventImpl",
+          {
+            "EventID": "RCPDResponse",
+            "Version": "1.0",
+            "Timestamp": 42323242342344,
+            "Data": [
+              "org.eclipse.ecsp.domain.ro.RCPDResponseV1_0",
+              {
+                "response": "SUCCESS",
+                "rcpdRequestId": "74125911-7a89-41be-b3e6-831b5fca27a4"
+              }
+            ],
+            "VehicleId": "12345678"
+          }
+        ]
+      ]
+    ]
+  },
+  {
+    "schemaVersion": "1.0",
+    "rcpdEvent": [
+      "org.eclipse.ecsp.entities.IgniteEventImpl",
+      {
+        "EventID": "RCPDRequest",
+        "Version": "1.0",
+        "UserContext": [
+          "java.util.List",
+          [
+            {
+              "userId": "testdata",
+              "role": "VO"
+            }
+          ]
+        ],
+        "RequestId": "40c56a13-2e39-48e5-89ad-a5707d6afab0",
+        "Timestamp": 1555766076000,
+        "Data": [
+          "org.eclipse.ecsp.domain.ro.RCPDRequestV1_0",
+          {
+            "origin": "SelfManage",
+            "userId": "testdata",
+            "rcpdRequestId": "40c56a13-2e39-48e5-89ad-a5707d6afab0"
+          }
+        ],
+        "VehicleId": "12345678"
+      }
+    ],
+    "rcpdResponseList": [
+      "java.util.List",
+      [
+        [
+          "org.eclipse.ecsp.entities.IgniteEventImpl",
+          {
+            "EventID": "RCPDResponse",
+            "Version": "1.0",
+            "Timestamp": 42323242342344,
+            "Data": [
+              "org.eclipse.ecsp.domain.ro.RCPDResponseV1_0",
+              {
+                "response": "SUCCESS",
+                "rcpdRequestId": "40c56a13-2e39-48e5-89ad-a5707d6afab0"
+              }
+            ],
+            "VehicleId": "12345678"
+          }
+        ]
+      ]
+    ]
+  },
+  {
+    "schemaVersion": "1.0",
+    "rcpdEvent": [
+      "org.eclipse.ecsp.entities.IgniteEventImpl",
+      {
+        "EventID": "RCPDRequest",
+        "Version": "1.0",
+        "UserContext": [
+          "java.util.List",
+          [
+            {
+              "userId": "testdata",
+              "role": "VO"
+            }
+          ]
+        ],
+        "RequestId": "06de1396-a6c9-4601-9c1e-853d14cf9ee5",
+        "Timestamp": 1555766086000,
+        "Data": [
+          "org.eclipse.ecsp.domain.ro.RCPDRequestV1_0",
+          {
+            "origin": "SelfManage",
+            "userId": "testdata",
+            "rcpdRequestId": "06de1396-a6c9-4601-9c1e-853d14cf9ee5"
+          }
+        ],
+        "VehicleId": "12345678"
+      }
+    ],
+    "rcpdResponseList": [
+      "java.util.List",
+      [
+        [
+          "org.eclipse.ecsp.entities.IgniteEventImpl",
+          {
+            "EventID": "RCPDResponse",
+            "Version": "1.0",
+            "Timestamp": 42323242342344,
+            "Data": [
+              "org.eclipse.ecsp.domain.ro.RCPDResponseV1_0",
+              {
+                "response": "SUCCESS",
+                "rcpdRequestId": "06de1396-a6c9-4601-9c1e-853d14cf9ee5"
+              }
+            ],
+            "VehicleId": "12345678"
+          }
+        ]
+      ]
+    ]
+  },
+  {
+    "schemaVersion": "1.0",
+    "rcpdEvent": [
+      "org.eclipse.ecsp.entities.IgniteEventImpl",
+      {
+        "EventID": "RCPDRequest",
+        "Version": "1.0",
+        "UserContext": [
+          "java.util.List",
+          [
+            {
+              "userId": "testdata",
+              "role": "VO"
+            }
+          ]
+        ],
+        "RequestId": "55a579b6-6a57-4f84-b023-d85f6f8f4285",
+        "Timestamp": 1555766096000,
+        "Data": [
+          "org.eclipse.ecsp.domain.ro.RCPDRequestV1_0",
+          {
+            "origin": "SelfManage",
+            "userId": "testdata",
+            "rcpdRequestId": "55a579b6-6a57-4f84-b023-d85f6f8f4285"
+          }
+        ],
+        "VehicleId": "12345678"
+      }
+    ],
+    "rcpdResponseList": [
+      "java.util.List",
+      [
+        [
+          "org.eclipse.ecsp.entities.IgniteEventImpl",
+          {
+            "EventID": "RCPDResponse",
+            "Version": "1.0",
+            "Timestamp": 42323242342344,
+            "Data": [
+              "org.eclipse.ecsp.domain.ro.RCPDResponseV1_0",
+              {
+                "response": "SUCCESS",
+                "rcpdRequestId": "55a579b6-6a57-4f84-b023-d85f6f8f4285"
+              }
+            ],
+            "VehicleId": "12345678"
+          }
+        ]
+      ]
+    ]
+  },
+  {
+    "schemaVersion": "1.0",
+    "rcpdEvent": [
+      "org.eclipse.ecsp.entities.IgniteEventImpl",
+      {
+        "EventID": "RCPDRequest",
+        "Version": "1.0",
+        "UserContext": [
+          "java.util.List",
+          [
+            {
+              "userId": "testdata",
+              "role": "VO"
+            }
+          ]
+        ],
+        "RequestId": "f3b57947-29d7-4c5c-a3e0-0e38a3b8d263",
+        "Timestamp": 1555766106000,
+        "Data": [
+          "org.eclipse.ecsp.domain.ro.RCPDRequestV1_0",
+          {
+            "origin": "SelfManage",
+            "userId": "testdata",
+            "rcpdRequestId": "f3b57947-29d7-4c5c-a3e0-0e38a3b8d263"
+          }
+        ],
+        "VehicleId": "12345678"
+      }
+    ],
+    "rcpdResponseList": [
+      "java.util.List",
+      [
+        [
+          "org.eclipse.ecsp.entities.IgniteEventImpl",
+          {
+            "EventID": "RCPDResponse",
+            "Version": "1.0",
+            "Timestamp": 42323242342344,
+            "Data": [
+              "org.eclipse.ecsp.domain.ro.RCPDResponseV1_0",
+              {
+                "response": "SUCCESS",
+                "rcpdRequestId": "f3b57947-29d7-4c5c-a3e0-0e38a3b8d263"
+              }
+            ],
+            "VehicleId": "12345678"
+          }
+        ]
+      ]
+    ]
+  },
+  {
+    "schemaVersion": "1.0",
+    "rcpdEvent": [
+      "org.eclipse.ecsp.entities.IgniteEventImpl",
+      {
+        "EventID": "RCPDRequest",
+        "Version": "1.0",
+        "UserContext": [
+          "java.util.List",
+          [
+            {
+              "userId": "testdata",
+              "role": "VO"
+            }
+          ]
+        ],
+        "RequestId": "a30a4e05-2217-4426-85d4-01e7e4e6c81e",
+        "Timestamp": 1555766116000,
+        "Data": [
+          "org.eclipse.ecsp.domain.ro.RCPDRequestV1_0",
+          {
+            "origin": "SelfManage",
+            "userId": "testdata",
+            "rcpdRequestId": "a30a4e05-2217-4426-85d4-01e7e4e6c81e"
+          }
+        ],
+        "VehicleId": "12345678"
+      }
+    ],
+    "rcpdResponseList": [
+      "java.util.List",
+      [
+        [
+          "org.eclipse.ecsp.entities.IgniteEventImpl",
+          {
+            "EventID": "RCPDResponse",
+            "Version": "1.0",
+            "Timestamp": 42323242342344,
+            "Data": [
+              "org.eclipse.ecsp.domain.ro.RCPDResponseV1_0",
+              {
+                "response": "SUCCESS",
+                "rcpdRequestId": "a30a4e05-2217-4426-85d4-01e7e4e6c81e"
+              }
+            ],
+            "VehicleId": "12345678"
+          }
+        ]
+      ]
+    ]
+  },
+  {
+    "schemaVersion": "1.0",
+    "rcpdEvent": [
+      "org.eclipse.ecsp.entities.IgniteEventImpl",
+      {
+        "EventID": "RCPDRequest",
+        "Version": "1.0",
+        "UserContext": [
+          "java.util.List",
+          [
+            {
+              "userId": "testdata",
+              "role": "VO"
+            }
+          ]
+        ],
+        "RequestId": "02294900-bb85-4657-92a5-4b12a2201149",
+        "Timestamp": 1555766126000,
+        "Data": [
+          "org.eclipse.ecsp.domain.ro.RCPDRequestV1_0",
+          {
+            "origin": "SelfManage",
+            "userId": "testdata",
+            "rcpdRequestId": "02294900-bb85-4657-92a5-4b12a2201149"
+          }
+        ],
+        "VehicleId": "12345678"
+      }
+    ],
+    "rcpdResponseList": [
+      "java.util.List",
+      [
+        [
+          "org.eclipse.ecsp.entities.IgniteEventImpl",
+          {
+            "EventID": "RCPDResponse",
+            "Version": "1.0",
+            "Timestamp": 42323242342344,
+            "Data": [
+              "org.eclipse.ecsp.domain.ro.RCPDResponseV1_0",
+              {
+                "response": "SUCCESS",
+                "rcpdRequestId": "02294900-bb85-4657-92a5-4b12a2201149"
+              }
+            ],
+            "VehicleId": "12345678"
+          }
+        ]
+      ]
+    ]
+  },
+  {
+    "schemaVersion": "1.0",
+    "rcpdEvent": [
+      "org.eclipse.ecsp.entities.IgniteEventImpl",
+      {
+        "EventID": "RCPDRequest",
+        "Version": "1.0",
+        "UserContext": [
+          "java.util.List",
+          [
+            {
+              "userId": "testdata",
+              "role": "VO"
+            }
+          ]
+        ],
+        "RequestId": "d8c5211d-32d8-4d2a-9faa-eef443ba7443",
+        "Timestamp": 1555766136000,
+        "Data": [
+          "org.eclipse.ecsp.domain.ro.RCPDRequestV1_0",
+          {
+            "origin": "SelfManage",
+            "userId": "testdata",
+            "rcpdRequestId": "d8c5211d-32d8-4d2a-9faa-eef443ba7443"
+          }
+        ],
+        "VehicleId": "12345678"
+      }
+    ],
+    "rcpdResponseList": [
+      "java.util.List",
+      [
+        [
+          "org.eclipse.ecsp.entities.IgniteEventImpl",
+          {
+            "EventID": "RCPDResponse",
+            "Version": "1.0",
+            "Timestamp": 42323242342344,
+            "Data": [
+              "org.eclipse.ecsp.domain.ro.RCPDResponseV1_0",
+              {
+                "response": "SUCCESS",
+                "rcpdRequestId": "d8c5211d-32d8-4d2a-9faa-eef443ba7443"
+              }
+            ],
+            "VehicleId": "12345678"
+          }
+        ]
+      ]
+    ]
+  },
+  {
+    "schemaVersion": "1.0",
+    "rcpdEvent": [
+      "org.eclipse.ecsp.entities.IgniteEventImpl",
+      {
+        "EventID": "RCPDRequest",
+        "Version": "1.0",
+        "UserContext": [
+          "java.util.List",
+          [
+            {
+              "userId": "testdata",
+              "role": "VO"
+            }
+          ]
+        ],
+        "RequestId": "04a89097-f596-4cad-80a8-2a84f89054e8",
+        "Timestamp": 1555766146000,
+        "Data": [
+          "org.eclipse.ecsp.domain.ro.RCPDRequestV1_0",
+          {
+            "origin": "SelfManage",
+            "userId": "testdata",
+            "rcpdRequestId": "04a89097-f596-4cad-80a8-2a84f89054e8"
+          }
+        ],
+        "VehicleId": "12345678"
+      }
+    ],
+    "rcpdResponseList": [
+      "java.util.List",
+      [
+        [
+          "org.eclipse.ecsp.entities.IgniteEventImpl",
+          {
+            "EventID": "RCPDResponse",
+            "Version": "1.0",
+            "Timestamp": 42323242342344,
+            "Data": [
+              "org.eclipse.ecsp.domain.ro.RCPDResponseV1_0",
+              {
+                "response": "SUCCESS",
+                "rcpdRequestId": "04a89097-f596-4cad-80a8-2a84f89054e8"
+              }
+            ],
+            "VehicleId": "12345678"
+          }
+        ]
+      ]
+    ]
+  },
+  {
+    "schemaVersion": "1.0",
+    "rcpdEvent": [
+      "org.eclipse.ecsp.entities.IgniteEventImpl",
+      {
+        "EventID": "RCPDRequest",
+        "Version": "1.0",
+        "UserContext": [
+          "java.util.List",
+          [
+            {
+              "userId": "testdata",
+              "role": "VO"
+            }
+          ]
+        ],
+        "RequestId": "ee4f141f-3a2b-4722-ad17-7750b616c9e5",
+        "Timestamp": 1555766166000,
+        "Data": [
+          "org.eclipse.ecsp.domain.ro.RCPDRequestV1_0",
+          {
+            "origin": "SelfManage",
+            "userId": "testdata",
+            "rcpdRequestId": "ee4f141f-3a2b-4722-ad17-7750b616c9e5"
+          }
+        ],
+        "VehicleId": "12345678"
+      }
+    ],
+    "rcpdResponseList": [
+      "java.util.List",
+      [
+        [
+          "org.eclipse.ecsp.entities.IgniteEventImpl",
+          {
+            "EventID": "RCPDResponse",
+            "Version": "1.0",
+            "Timestamp": 42323242342344,
+            "Data": [
+              "org.eclipse.ecsp.domain.ro.RCPDResponseV1_0",
+              {
+                "response": "SUCCESS",
+                "rcpdRequestId": "ee4f141f-3a2b-4722-ad17-7750b616c9e5"
+              }
+            ],
+            "VehicleId": "12345678"
+          }
+        ]
+      ]
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.1",
+  "roEvent": [
+    "org.eclipse.ecsp.entities.IgniteEventImpl",
+    {
+      "EventID": "RemoteOperationDriverWindow",
+      "Version": "1.1",
+      "Timestamp": 1514764800000,
+      "Data": [
+        "org.eclipse.ecsp.domain.ro.RemoteOperationDriverWindowV1_1",
+        {
+          "state": "OPENED",
+          "duration": 75,
+          "percent": 20,
+          "roRequestId": "kmpxNPUwqEW69CzK7VmO98BLWpLOqSw1",
+          "origin": "ROSupportOwner"
+        }
+      ],
+      "RequestId": "kmpxNPUwqEW69CzK7VmO98BLWpLOqSw1",
+      "VehicleId": "7777",
+      "BizTransactionId": "kmpxNPUwqEW69CzK7VmO98BLWpLOqSw1"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.1",
+  "roEvent": [
+    "org.eclipse.ecsp.entities.IgniteEventImpl",
+    {
+      "EventID": "RemoteOperationResponse",
+      "Version": "1.1",
+      "Timestamp": 1514764800000,
+      "Data": [
+        "org.eclipse.ecsp.domain.ro.RemoteOperationResponseV1_1",
+        {
+          "response": "SUCCESS",
+          "roRequestId": "P2KvQwet9A28bOrQgxQDcp60xhCP9O9a",
+          "origin": "ROSupportOwner"
+        }
+      ],
+      "RequestId": "P2KvQwet9A28bOrQgxQDcp60xhCP9O9a",
+      "VehicleId": "7777",
+      "BizTransactionId": "P2KvQwet9A28bOrQgxQDcp60xhCP9O9a"
+    }
+  ]
+}

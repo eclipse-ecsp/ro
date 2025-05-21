@@ -1,0 +1,58 @@
+{
+  "callCenterInfo": {
+    "ecall": [
+      {
+        "callCenterName": "CallCenter_1",
+        "PrimaryPhoneNumber": "+0123456789",
+        "callTypeEnum": "Type_7",
+        "SecondaryPhoneNumber": "+0123456789"
+      },
+      {
+        "callCenterName": "CallCenter_2",
+        "PrimaryPhoneNumber": "+0123456789",
+        "callTypeEnum": "Type_8",
+        "SecondaryPhoneNumber": "+0123456789"
+      }
+    ],
+    "bcall": [
+      {
+        "callCenterName": "CallCenter_2",
+        "callTypeEnum": "Type_1",
+        "PrimaryPhoneNumber": "+0123456789",
+        "SecondaryPhoneNumber": "+0123456789"
+      },
+      {
+        "callCenterName": "CallCenter_2",
+        "callTypeEnum": "Type_2",
+        "PrimaryPhoneNumber": "+0123456789",
+        "SecondaryPhoneNumber": "+0123456789"
+      },
+      {
+        "callCenterName": "CallCenter_1",
+        "callTypeEnum": "Type_3",
+        "PrimaryPhoneNumber": "+0123456789",
+        "SecondaryPhoneNumber": "+0123456789"
+      },
+      {
+        "callCenterName": "CallCenter_1",
+        "callTypeEnum": "Type_4",
+        "PrimaryPhoneNumber": "+0123456789",
+        "SecondaryPhoneNumber": "+0123456789"
+      },
+      {
+        "callCenterName": "CallCenter_2",
+        "callTypeEnum": "Type_5",
+        "PrimaryPhoneNumber": "+0123456789",
+        "SecondaryPhoneNumber": "+0123456789"
+      }
+    ],
+    "stolen": [
+      {
+        "callCenterName": "CallCenter_1",
+        "callTypeEnum": "Type_6",
+        "PrimaryPhoneNumber": "+0123456789",
+        "SecondaryPhoneNumber": "+0123456789"
+      }
+    ]
+  }
+}

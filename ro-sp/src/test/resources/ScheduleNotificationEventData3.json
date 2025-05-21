@@ -1,0 +1,22 @@
+{
+  "RequestId": "zmvKoWxzI9g3U7VztcLzWFCNSoeXSbBii",
+  "BizTransactionId": "SessionId2",
+  "ServiceName": "ro",
+  "Timezone": 8,
+  "EventID": "RemoteOperationACVScheduleUpdate",
+  "VehicleId": "vin123",
+  "Data": {
+    "duration": 10,
+    "scheduleKey": "scheduleKey123",
+    "origin": "THIRDPARTY2",
+    "roRequestId": "roRequestId-xxds-84sxs",
+    "userId": "userId",
+    "state": "START"
+  },
+  "UserContext": [
+    {
+      "userId": "testdata",
+      "role": "VO"
+    }
+  ]
+}

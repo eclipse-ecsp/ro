@@ -1,0 +1,37 @@
+{
+  "EventID": "ScheduleOpStatusEvent",
+  "Version": "1.0",
+  "Timestamp": 1597741059144,
+  "Data": {
+    "scheduleId": "e1ad0c9b-2911-429a-bc69-5640cb09f339",
+    "status": "CREATE",
+    "igniteEvent": {
+      "EventID": "CreateScheduleEvent",
+      "Version": "1.0",
+      "Timestamp": 1597741059126,
+      "Data": {
+        "initialDelayMs": 518399395,
+        "recurrenceType": "CUSTOM_MS",
+        "recurrenceDelayMs": 0,
+        "firingCount": 1,
+        "notificationPayload": "eyJSZXF1ZXN0SWQiOiJ6bXZLb1d4ekk5ZzNVN1Z6dGNMeldGQ05Tb2VYU2JCaWkiLCJCaXpUcmFuc2FjdGlvbklkIjoiU2Vzc2lvbklkMiIsIlNlcnZpY2VOYW1lIjoicmNwZCJ9",
+        "notificationKey": {
+          "key": "Device123"
+        },
+        "notificationTopic": "stolen",
+        "serviceName": "rcpd",
+        "customExtension": "rcpd"
+      },
+      "VehicleId": "Device123",
+      "Timezone": 0,
+      "DeviceDeliveryCutoff": -1,
+      "DuplicateMessage": false
+    },
+    "valid": true
+  },
+  "VehicleId": "Device123",
+  "Timezone": 0,
+  "MessageId": "184195006",
+  "DeviceDeliveryCutoff": -1,
+  "DuplicateMessage": false
+}

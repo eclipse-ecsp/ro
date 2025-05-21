@@ -1,0 +1,12 @@
+{
+  "EventID": "RemoteOperationResponse",
+  "Version": "1.1",
+  "Timestamp": 0,
+  "Data": {
+    "response": "SUCCESS",
+    "roRequestId": "zmvKoWxzI9g3U7VztcLzWFCNSoeXSbBi"
+  },
+  "RequestId": "Device123-id",
+  "SourceDeviceId": "Device123",
+  "MessageId": "36451"
+}

@@ -1,0 +1,11 @@
+{
+  "state": "STARTED",
+  "customExtension": {},
+  "duration": 70,
+  "roRequestId": "-\\0274\\302]\\325\\324 \\354K",
+  "schedule": {
+    "name": "Morning",
+    "scheduleTs": 1357011846,
+    "recurrenceType": "DAILY"
+  }
+}

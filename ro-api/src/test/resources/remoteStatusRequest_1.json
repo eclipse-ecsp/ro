@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.1",
+  "roEvent": [
+    "org.eclipse.ecsp.entities.IgniteEventImpl",
+    {
+      "EventID": "RemoteOperationDoors",
+      "Version": "1.1",
+      "Timestamp": 1514764800000,
+      "Data": [
+        "org.eclipse.ecsp.domain.ro.RemoteOperationDoorsV1_1",
+        {
+          "state": "LOCKED",
+          "roRequestId": "P2KvQwet9A28bOrQgxQDcp60xhCP9O9a"
+        }
+      ],
+      "RequestId": "P2KvQwet9A28bOrQgxQDcp60xhCP9O9a",
+      "VehicleId": "7777",
+      "BizTransactionId": "P2KvQwet9A28bOrQgxQDcp60xhCP9O9a"
+    }
+  ],
+  "roResponseList": [
+    "java.util.List",
+    [
+      [
+        "org.eclipse.ecsp.entities.IgniteEventImpl",
+        {
+          "Timezone": 0,
+          "MessageId": "26",
+          "CorrelationId": "0",
+          "BizTransactionId": "dsaf",
+          "DeviceDeliveryCutoff": -1,
+          "EventID": "RemoteOperationResponse",
+          "Version": "1.1",
+          "Timestamp": 42323242342344,
+          "Data": [
+            "org.eclipse.ecsp.domain.ro.RemoteOperationResponseV1_1",
+            {
+              "response": "SUCCESS",
+              "roRequestId": "P2KvQwet9A28bOrQgxQDcp60xhCP9O9a"
+            }
+          ],
+          "RequestId": "P2KvQwet9A28bOrQgxQDcp60xhCP9O9a",
+          "SourceDeviceId": "2b8287b2",
+          "VehicleId": "7777"
+        }
+      ],
+      [
+        "org.eclipse.ecsp.entities.IgniteEventImpl",
+        {
+          "Timezone": 0,
+          "MessageId": "25",
+          "CorrelationId": "262117",
+          "BizTransactionId": "dsaf",
+          "DeviceDeliveryCutoff": -1,
+          "EventID": "RemoteOperationResponse",
+          "Version": "1.1",
+          "Timestamp": 1535567764667,
+          "Data": [
+            "org.eclipse.ecsp.domain.ro.RemoteOperationResponseV1_1",
+            {
+              "response": "CUSTOM_EXTENSION",
+              "roRequestId": "P2KvQwet9A28bOrQgxQDcp60xhCP9O9a"
+            }
+          ],
+          "RequestId": "P2KvQwet9A28bOrQgxQDcp60xhCP9O9a",
+          "SourceDeviceId": "2b8287b2",
+          "VehicleId": "7777"
+        }
+      ]
+    ]
+  ]
+}

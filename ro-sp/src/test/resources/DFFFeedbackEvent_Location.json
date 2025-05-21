@@ -1,0 +1,25 @@
+{
+  "feedBackEvent": {
+    "EventID": "DffEvent",
+    "Version": "1.0",
+    "Timestamp": 1666178967595,
+    "RequestId": "58c4e66b-f82e-4d11-8962-e570780d100e",
+    "SourceDeviceId": "TF2462951X10910",
+    "VehicleId": "9BD363A21NYZ03279",
+    "Timezone": 0,
+    "DFFQualifier": "GET_VEHICLE_LOCATION",
+    "MessageId": "4",
+    "BizTransactionId": "80f0c8a3-2dd0-49c5-b0f6-870f0a92772d"
+  },
+  "feedId": "62ce4093a7f0027ddcb34ccd",
+  "responseCode": 201,
+  "responseBody": "DQogew0KICAidGltZVN0YW1wIjogMTY2NjI0MTU5NTkyNCwNCiAgImxvbmdpdHVkZSI6IDczLjg1NjcsDQogICJsYXRpdHVkZSI6IDE4LjUyMDQsDQogICJhbHRpdHVkZSI6IDEwMCwNCiAgImlzTG9jYXRpb25BcHByb3giOmZhbHNlLA0KICAiYmVhcmluZyI6IDEwDQogIH0NCg0K",
+  "responseHeaders": {
+  },
+  "url": "https://thirdParty3-thirdParty1-ignite.services.thirdParty4.com/ams/cl/authentication/trustedfed",
+  "status": {
+    "type": "success",
+    "createTs": 1666178967970,
+    "statusCode": "SUCCESS"
+  }
+}

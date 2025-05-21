@@ -1,0 +1,20 @@
+{
+  "EventID": "RIResponse",
+  "Version": "1.1",
+  "Data": {
+    "response": "SUCCESS",
+    "roRequestId": "123456",
+    "customExtension": {
+      "response ": "SUCCESS",
+      "isTransient": true,
+      "failureReasonCode": 1,
+      "serviceRequestId": 723452352345
+    }
+  },
+  "RequestId": "zmvKoWxzI9g3U7VztcLzWFCNSoeXSbBii",
+  "MessageId": "123456",
+  "VehicleId": "HUTSQGU6HS2949",
+  "Timezone": 0,
+  "CorrelationId": "123456",
+  "BizTransactionId": "7654"
+}

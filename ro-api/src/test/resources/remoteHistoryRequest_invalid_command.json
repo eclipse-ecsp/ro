@@ -1,0 +1,50 @@
+{
+  "badData": "02723452352345K",
+  "request": {
+    "eventId": null,
+    "version": "1.1",
+    "timestamp": 1231231231233112312,
+    "data": {
+      "state": "OPENED",
+      "roRequestId": "02723452352345K",
+      "customExtension": "RemoteOperationStatus"
+    },
+    "timezone": 60
+  },
+  "responses": [
+    {
+      "eventId": "ROResponse",
+      "version": "1.1",
+      "timestamp": 42323242342344,
+      "data": {
+        "response": 202,
+        "roRequestId": "string of roRequestId",
+        "customExtension": {
+          "status": "UNLOCKED",
+          "isTransient": true,
+          "serviceRequestId": "stringreqid",
+          "failureReasonCode": 404,
+          "vehicleStatus": "ClassVehicleStatus"
+        }
+      },
+      "timezone": 60
+    },
+    {
+      "eventId": "ROResponse",
+      "version": "1.1",
+      "timestamp": 42323242342344,
+      "data": {
+        "response": 200,
+        "roRequestId": "string of roRequestId",
+        "customExtension": {
+          "status": "LOCKED",
+          "serviceRequestId": "failAtTransient",
+          "isTransient": false,
+          "failureReasonCode": 500,
+          "vehicleStatus": "ClassVehicleStatus"
+        }
+      },
+      "timezone": 60
+    }
+  ]
+}

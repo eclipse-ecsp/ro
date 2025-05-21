@@ -1,0 +1,10 @@
+{
+  "state": "COMFORT_AUTO_ON_MODE_START_ALL",
+  "interiorTemperature": 30,
+  "temperatureUOM": "Fahrenheit",
+  "fanSpeed": 30,
+  "targetTemp": 24,
+  "timeoutAfterTemp": 26,
+  "preTripTimeout": 28,
+  "roRequestId": "-\\0274\\302]\\3255\\324 \\3545K"
+}
