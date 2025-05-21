@@ -11,7 +11,7 @@
         {
           "state": "ON",
           "temperature": 78,
-          "temperatureUnit": "Celsius",
+          "temperatureUnit": "CELSIUS",
           "fanSpeed": 75,
           "targetTemperature": 24.5,
           "timeoutForAfterTemperature": 90,

@@ -1,7 +1,7 @@
 {
   "state": "COMFORT_AUTO_ON_MODE_START_ALL",
   "interiorTemperature": 30,
-  "temperatureUOM": "Fahrenheit",
+  "temperatureUOM": "FAHRENHEIT",
   "fanSpeed": 30,
   "targetTemp": 24,
   "timeoutAfterTemp": 26,
