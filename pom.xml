@@ -106,15 +106,15 @@
         </sonar.coverage.jacoco.xmlReportPaths>
         <sonar.language>java</sonar.language>
         <sonar.exclusions>
-            src/main/java/org/eclipse/ecsp/domain/ro/*,
-            src/main/java/org/eclipse/ecsp/domain/remoteInhibit/*,
-            src/main/java/org/eclipse/ecsp/ro/domains/*,
-            src/main/java/org/eclipse/ecsp/ro/constant/*,
-            src/main/java/org/eclipse/ecsp/ro/constants/*,
-            src/main/java/org/eclipse/ecsp/platform/services/ro/client/*
-            src/main/java/org/eclipse/ecsp/platform/services/ro/domain/*,
-            src/main/java/org/eclipse/ecsp/platform/services/ro/constant/*,
-            src/main/java/org/eclipse/ecsp/platform/services/ro/service/DeviceMessageFailuresEventFiler.java
+            **/java/org/eclipse/ecsp/domain/ro/*,
+            **/java/org/eclipse/ecsp/domain/remoteInhibit/*,
+            **/java/org/eclipse/ecsp/ro/domains/*,
+            **/java/org/eclipse/ecsp/ro/constant/*,
+            **/java/org/eclipse/ecsp/ro/constants/*,
+            **/java/org/eclipse/ecsp/platform/services/ro/client/*
+            **/java/org/eclipse/ecsp/platform/services/ro/domain/*,
+            **/java/org/eclipse/ecsp/platform/services/ro/constant/*,
+            **/java/org/eclipse/ecsp/platform/services/ro/service/DeviceMessageFailuresEventFiler.java
         </sonar.exclusions>
 
         <!-- Jacoco Plugin Properties -->
