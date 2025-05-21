@@ -204,7 +204,7 @@ class RoEntityTest {
         Assertions.assertEquals("kmpxNPUwqEW69CzK7VmO98BLWpLOqSw1", remoteClimateData.getRoRequestId());
         Assertions.assertEquals(RemoteOperationClimateV2_0.State.ON, remoteClimateData.getState());
         Assertions.assertEquals("ROSupportOwner", remoteClimateData.getOrigin());
-        Assertions.assertEquals(RemoteOperationClimateV2_0.TemperatureUnit.Celsius,
+        Assertions.assertEquals(RemoteOperationClimateV2_0.TemperatureUnit.CELSIUS,
                 remoteClimateData.getTemperatureUnit());
         Assertions.assertEquals(Integer.valueOf(TestConstants.SEVENTY_FIVE), remoteClimateData.getFanSpeed());
         Assertions.assertEquals(Integer.valueOf(TestConstants.SEVENTY_EIGHT),

@@ -131,8 +131,6 @@ public class RemoteInhibitDataHandler {
     @Autowired
     private DMAShoulderTapResolver dmaShoulderTapResolver;
 
-    public void init() {
-    }
 
     /**
      * Process user event.

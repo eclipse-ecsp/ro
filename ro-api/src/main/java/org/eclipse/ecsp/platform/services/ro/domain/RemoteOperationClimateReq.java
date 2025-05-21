@@ -174,13 +174,13 @@ public class RemoteOperationClimateReq extends RemoteRequest implements EventDat
     public enum TemperatureUnit {
 
         /**
-         * Celsius temperature unit.
+         * CELSIUS temperature unit.
          */
-        CELSIUS("Celsius"),
+        CELSIUS("CELSIUS"),
         /**
-         * Fahrenheit temperature unit.
+         * FAHRENHEIT temperature unit.
          */
-        FAHRENHEIT("Fahrenheit");
+        FAHRENHEIT("FAHRENHEIT");
 
         private final String value;
 

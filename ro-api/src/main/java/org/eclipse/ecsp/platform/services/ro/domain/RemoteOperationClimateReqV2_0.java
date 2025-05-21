@@ -135,8 +135,8 @@ public class RemoteOperationClimateReqV2_0 extends RemoteRequest implements Even
      */
     public enum TemperatureUnit {
 
-        Celsius("Celsius"),
-        Fahrenheit("Fahrenheit");
+        CELSIUS("CELSIUS"),
+        FAHRENHEIT("FAHRENHEIT");
 
         private final String value;
 

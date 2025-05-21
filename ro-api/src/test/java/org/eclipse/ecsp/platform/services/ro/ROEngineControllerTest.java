@@ -89,7 +89,7 @@ public class ROEngineControllerTest extends CommonTestBase {
 
     private static final IgniteLogger LOGGER = IgniteLoggerFactory.getLogger(ROEngineControllerTest.class);
     private static final String API_VERSION = "/v1.1";
-    private static final String API_VERSION_v2 = "/v2";
+    private static final String API_VERSION_V_2 = "/v2";
 
     private ResponseErrorHandler preExistingErrorHandler;
 
@@ -171,7 +171,7 @@ public class ROEngineControllerTest extends CommonTestBase {
         HttpEntity<String> entity = new HttpEntity<String>(requestJson, createHeaders());
         Mockito.when(deviceAssociationApiClient.getAssociatedUsers(Mockito.anyString())).thenReturn("123Engine");
         ResponseEntity<String> response = restTemplate
-                .exchange(API_VERSION_v2 + "/users/123Engine/vehicles/123456/ro/engine",
+                .exchange(API_VERSION_V_2 + "/users/123Engine/vehicles/123456/ro/engine",
                         HttpMethod.PUT,
                         entity, String.class);
         Assert.assertEquals(HttpStatus.ACCEPTED, response.getStatusCode());
@@ -192,7 +192,7 @@ public class ROEngineControllerTest extends CommonTestBase {
         HttpEntity<String> entity = new HttpEntity<String>(requestJson, headers);
         Mockito.when(deviceAssociationApiClient.getAssociatedUsers(Mockito.anyString())).thenReturn("123Engine");
         ResponseEntity<String> response = restTemplate
-                .exchange(API_VERSION_v2 + "/users/123Engine/vehicles/123456/ro/engine",
+                .exchange(API_VERSION_V_2 + "/users/123Engine/vehicles/123456/ro/engine",
                         HttpMethod.PUT,
                         entity, String.class);
         Assert.assertEquals(HttpStatus.ACCEPTED, response.getStatusCode());
@@ -212,7 +212,7 @@ public class ROEngineControllerTest extends CommonTestBase {
                     ROEngineControllerTest.class.getResourceAsStream("/remoteEngineScheduleRequest2.json"), "UTF-8");
             HttpEntity<String> entity = new HttpEntity<String>(requestJson, createHeaders());
             ResponseEntity<String> response = restTemplate
-                    .exchange(API_VERSION_v2 + "/users/123Engine/vehicles/123456/ro/engine",
+                    .exchange(API_VERSION_V_2 + "/users/123Engine/vehicles/123456/ro/engine",
                             HttpMethod.PUT,
                             entity, String.class);
         });
@@ -233,7 +233,7 @@ public class ROEngineControllerTest extends CommonTestBase {
         HttpEntity<String> entity = new HttpEntity<String>(requestJson, createHeaders());
         Mockito.when(deviceAssociationApiClient.getAssociatedUsers(Mockito.anyString())).thenReturn("123Engine");
         ResponseEntity<String> response = restTemplate
-                .exchange(API_VERSION_v2 + "/users/123Engine/vehicles/123456/ro/engine",
+                .exchange(API_VERSION_V_2 + "/users/123Engine/vehicles/123456/ro/engine",
                         HttpMethod.PUT,
                         entity, String.class);
         Assert.assertEquals(HttpStatus.ACCEPTED, response.getStatusCode());
@@ -255,7 +255,7 @@ public class ROEngineControllerTest extends CommonTestBase {
         Mockito.when(deviceAssociationApiClient.getAssociatedUsers(Mockito.anyString())).thenReturn("123Engine");
         HttpEntity<String> entity = new HttpEntity<String>(requestJson, createHeaders());
         ResponseEntity<String> response = restTemplate
-                .exchange(API_VERSION_v2 + "/users/123Engine/vehicles/123456/ro/engine",
+                .exchange(API_VERSION_V_2 + "/users/123Engine/vehicles/123456/ro/engine",
                         HttpMethod.PUT,
                         entity, String.class);
         Assert.assertEquals(HttpStatus.ACCEPTED, response.getStatusCode());

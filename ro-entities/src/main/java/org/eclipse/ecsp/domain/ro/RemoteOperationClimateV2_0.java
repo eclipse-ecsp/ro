@@ -86,8 +86,8 @@ public class RemoteOperationClimateV2_0 extends AbstractRoEventData {
      */
     public enum TemperatureUnit {
 
-        Celsius("Celsius"),
-        Fahrenheit("Fahrenheit"),
+        CELSIUS("CELSIUS"),
+        FAHRENHEIT("FAHRENHEIT"),
         CUSTOM_EXTENSION("CUSTOM_EXTENSION");
 
         private String value;

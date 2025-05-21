@@ -58,7 +58,7 @@ import java.util.Map;
 @Component
 public class Utils {
 
-    private static final IgniteLogger LOGGER = IgniteLoggerFactory.getLogger(RCPDService.class);
+    private static final IgniteLogger LOGGER = IgniteLoggerFactory.getLogger(Utils.class);
 
 
     @Autowired

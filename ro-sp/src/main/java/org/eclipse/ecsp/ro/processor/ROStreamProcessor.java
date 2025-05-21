@@ -95,10 +95,13 @@ public class ROStreamProcessor implements IgniteEventStreamProcessor {
     public void init(StreamProcessingContext<IgniteKey<?>, IgniteEvent> spc) {
         LOGGER.info("Setting up RO stream processor");
         this.ctxt = spc;
-        riEventHandler.init();
         rcpdEventHandler.init();
     }
 
+    /**
+     * This method is used for post construction.
+     *
+     */
     @PostConstruct
     public void postConstruct() {
     }
@@ -152,14 +155,26 @@ public class ROStreamProcessor implements IgniteEventStreamProcessor {
         }
     }
 
+    /**
+     * This method is used to punctuate the event.
+     *
+     */
     @Override
     public void punctuate(long timestamp) {
     }
 
+    /**
+     * This method is used to close the event processor.
+     *
+     */
     @Override
     public void close() {
     }
 
+    /**
+     * This method is used to change the config.
+     *
+     */
     @Override
     public void configChanged(Properties props) {
     }
