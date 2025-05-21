@@ -1,6 +1,6 @@
-FROM ghcr.io/harman-automotive/csp-base-java17-tomcat9:3.0.0-abba886
+FROM eclipseecsp/ecsp-base-java17-tomcat10-apr:1.0.0
 
-LABEL author="HCPDEV <Hemant.Bhedasgaonkar@harman.com>"
+LABEL author="Suyash.Srivastava@Harman.com"
 
 ARG API_WAR_NAME
 ARG PROJECT_JAR_VERSION

@@ -1,8 +1,8 @@
 [<img src="./images/logo.png" width="400" height="200"/>](./images/logo.png)
 
 # remote-operations (ro)
-[![Build](https://github.com/HARMAN-Automotive/ro/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/HARMAN-Automotive/ro/actions/workflows/ci-cd.yml)
-[![License Compliance](https://github.com/Harman-Automotive/ro/actions/workflows/license-compliance.yml/badge.svg)](https://github.com/Harman-Automotive/ro/actions/workflows/license-compliance.yml)
+[![Build](https://github.com/eclipse-ecsp/ro/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/eclipse-ecsp/ro/actions/workflows/ci-cd.yml)
+[![License Compliance](https://github.com/eclipse-ecsp/ro/actions/workflows/license-compliance.yml/badge.svg)](https://github.com/eclipse-ecsp/ro/actions/workflows/license-compliance.yml)
 
 Remote operations is a service that can be used to push operations that can be executed in the vehicle and to get the response of the operation as notification. 
 
@@ -181,7 +181,7 @@ Please read [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) for details on our code o
 
 ## Contributors
 
-Check here the list of [contributors](https://github.com/HARMAN-Automotive/ro/graphs/contributors) who participated in this project.
+Check here the list of [contributors](https://github.com/eclipse-ecsp/ro/graphs/contributors) who participated in this project.
 
 ## Security Contact Information
 
@@ -201,6 +201,6 @@ This project is licensed under the Apache-2.0 License - see the [LICENSE](./LICE
 
 ## Announcements
 
-All updates to this library are present in our [releases page](https://github.com/HARMAN-Automotive/ro/releases).
-For the versions available, see the [tags on this repository](https://github.com/HARMAN-Automotive/ro/tags).
+All updates to this library are present in our [releases page](https://github.com/eclipse-ecsp/ro/releases).
+For the versions available, see the [tags on this repository](https://github.com/eclipse-ecsp/ro/tags).
 
