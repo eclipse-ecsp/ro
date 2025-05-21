@@ -1,10 +1,13 @@
-[<img src="./images/logo.png" width="400" height="200"/>](./images/logo.png)
+<div align="center">
+    <img src="./images/logo.png" width="400" height="200"/>
+<div>
 
-# remote-operations (ro)
+# Remote Operations
+
 [![Build](https://github.com/eclipse-ecsp/ro/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/eclipse-ecsp/ro/actions/workflows/ci-cd.yml)
 [![License Compliance](https://github.com/eclipse-ecsp/ro/actions/workflows/license-compliance.yml/badge.svg)](https://github.com/eclipse-ecsp/ro/actions/workflows/license-compliance.yml)
 
-Remote operations is a service that can be used to push operations that can be executed in the vehicle and to get the response of the operation as notification. 
+Remote Operations is a service that can be used to push operations that can be executed in the vehicle and to get the response of the operation as notification.
 
 Some of the supported remote operations are:
 
@@ -51,18 +54,46 @@ To build the project locally after it has been forked/cloned and the [dependenci
 
 from the command line interface.
 
-### Running the tests
+### Prerequisites
 
-```mvn test```
+The list of tools required to build and run the project:
+   - Java 17
+   - Maven
+   - Container environment
+
+### Installation
+
+- [Install Java 17](https://www.azul.com/downloads/?version=java-17-lts&package=jdk#zulu)
+
+- [How to set up Maven](https://maven.apache.org/install.html)
+
+- Install Docker on your machine by referring to official Docker documnentation to have a Container environment.
 
 ### Coding style check configuration
 
-[checkstyle.xml](./checkstyle.xml) is the HARMAN coding standard to follow while writing new/updating existing code.
+[checkstyle.xml](./checkstyle.xml) is the coding standard to follow while writing new/updating existing
+code.
 
-Checkstyle plugin [maven-checkstyle-plugin:3.2.1](https://maven.apache.org/plugins/maven-checkstyle-plugin/)
-is integrated in [pom.xml](./pom.xml) which runs in the `validate` phase and `check` goal
-of the maven lifecycle and fails the build if there are any checkstyle errors in the project.
+Checkstyle plugin [maven-checkstyle-plugin:3.2.1](https://maven.apache.org/plugins/maven-checkstyle-plugin/) is
+integrated in [pom.xml](./pom.xml) which runs in the `validate` phase and `check` goal of the maven lifecycle and fails
+the build if there are any checkstyle errors in the project.
 
+To run checkstyle plugin explicitly, run the following command:
+```mvn checkstyle:check```
+
+### Running the tests
+
+To run the tests for this system run the below maven command.
+
+```mvn test```
+
+Or run a specific test
+
+```mvn test -Dtest="TheFirstUnitTest"```
+
+To run a method from within a test
+
+```mvn test -Dtest="TheSecondUnitTest#whenTestCase2_thenPrintTest2_1"```
 
 ### Deployment
 
@@ -189,7 +220,7 @@ Please read [SECURITY.md](./SECURITY.md) to raise any security related issues.
 
 ## Support
 
-Please write to us at [csp@harman.com](mailto:csp@harman.com)
+Contact the project developers via the project's "dev" list - [ecsp-dev](https://accounts.eclipse.org/mailing-list/)
 
 ## Troubleshooting
 
