@@ -106,17 +106,16 @@
         </sonar.coverage.jacoco.xmlReportPaths>
         <sonar.language>java</sonar.language>
         <sonar.exclusions>
-            **/java/org/eclipse/ecsp/domain/ro/*,
-            **/java/org/eclipse/ecsp/ro/processor/*,
-            **/java/org/eclipse/ecsp/domain/remoteInhibit/*,
-            **/java/org/eclipse/ecsp/ro/domains/*,
-            **/java/org/eclipse/ecsp/ro/constant/*,
-            **/java/org/eclipse/ecsp/ro/constants/*,
-            **/java/org/eclipse/ecsp/platform/services/ro/rest/*,
-            **/java/org/eclipse/ecsp/platform/services/ro/client/*
-            **/java/org/eclipse/ecsp/platform/services/ro/domain/*,
-            **/java/org/eclipse/ecsp/platform/services/ro/constant/*,
-            **/java/org/eclipse/ecsp/platform/services/ro/service/*
+            **/org/eclipse/ecsp/domain/ro/*,
+            **/org/eclipse/ecsp/ro/processor/**/*.java,
+            **/org/eclipse/ecsp/domain/remoteInhibit/*,
+            **/org/eclipse/ecsp/ro/domains/*,
+            **/org/eclipse/ecsp/ro/constant/*,
+            **/org/eclipse/ecsp/ro/constants/*,
+            **/org/eclipse/ecsp/platform/services/ro/client/*
+            **/org/eclipse/ecsp/platform/services/ro/domain/*,
+            **/org/eclipse/ecsp/platform/services/ro/constant/*,
+            **/org/eclipse/ecsp/platform/services/ro/service/*
         </sonar.exclusions>
 
         <!-- Jacoco Plugin Properties -->
