@@ -40,6 +40,7 @@ package org.eclipse.ecsp.platform.services.ro.domain;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
+import org.eclipse.ecsp.domain.VehicleProfile;
 import java.util.List;
 
 /**

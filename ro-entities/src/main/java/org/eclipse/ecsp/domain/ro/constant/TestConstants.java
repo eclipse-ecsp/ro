@@ -45,6 +45,7 @@ public abstract class TestConstants {
     // Integer constants
     public static final int MINUS_ONE = -1;
     public static final long MINUS_ONE_LONG = -1L;
+    public static final int ONE = 1;
     public static final int TWO = 2;
     public static final int THREE = 3;
     public static final int FOUR = 4;

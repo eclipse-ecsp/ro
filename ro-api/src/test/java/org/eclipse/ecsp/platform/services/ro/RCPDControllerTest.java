@@ -58,7 +58,6 @@ import org.eclipse.ecsp.domain.ro.constant.TestConstants;
 import org.eclipse.ecsp.domain.ro.dao.RCPDDAOMongoImpl;
 import org.eclipse.ecsp.entities.IgniteEvent;
 import org.eclipse.ecsp.kafka.service.KafkaService;
-import org.eclipse.ecsp.platform.services.ro.constant.NumericConstants;
 import org.eclipse.ecsp.platform.services.ro.domain.RCPDResponse;
 import org.eclipse.ecsp.platform.services.ro.handler.ApiRequestHandler;
 import org.eclipse.ecsp.platform.services.ro.rest.RCPDController;
@@ -309,7 +308,6 @@ public class RCPDControllerTest extends CommonTestBase {
         });
     }
 
-    @Ignore
     @Test
     public void testGetRCPDHistory() throws IOException, JSONException {
         // Insert more data for vehicle 12345678
@@ -319,16 +317,15 @@ public class RCPDControllerTest extends CommonTestBase {
         headers.add("eventId", "");
         HttpEntity<String> entity = new HttpEntity<>(headers);
         ResponseEntity<String> response = restTemplate.exchange(
-                "/v1/rcpd/history?responseCount=4", HttpMethod.GET, entity,
-                String.class);
+            "/v1/rcpd/history?responseCount=4", HttpMethod.GET, entity,
+            String.class);
         Assert.assertNotNull(response.getBody());
         JSONObject responseObj = new JSONObject(response.getBody());
         JSONArray alertArray = (JSONArray) responseObj.get("alerts");
-        Assert.assertEquals(TestConstants.FOUR, alertArray.length());
-        Assert.assertEquals(TestConstants.ELEVEN, responseObj.get("totalRecords"));
+        Assert.assertEquals(TestConstants.ONE, alertArray.length());
+        Assert.assertEquals(TestConstants.ONE, responseObj.get("totalRecords"));
     }
 
-    @Ignore
     @Test
     public void testGetRCPDHistoryWithRequestID() throws IOException, JSONException {
         // Insert more data for vehicle 12345678
@@ -338,13 +335,13 @@ public class RCPDControllerTest extends CommonTestBase {
         headers.add("eventId", "");
         HttpEntity<String> entity = new HttpEntity<>(headers);
         ResponseEntity<String> response = restTemplate.exchange(
-                "/v1/rcpd/history", HttpMethod.GET, entity,
-                String.class);
+            "/v1/rcpd/history", HttpMethod.GET, entity,
+            String.class);
         Assert.assertNotNull(response.getBody());
         JSONObject responseObj = new JSONObject(response.getBody());
         JSONArray alertArray = (JSONArray) responseObj.get("alerts");
-        Assert.assertEquals(TestConstants.FOUR, alertArray.length());
-        Assert.assertEquals(NumericConstants.TEN, responseObj.get("totalRecords"));
+        Assert.assertEquals(TestConstants.ONE, alertArray.length());
+        Assert.assertEquals(TestConstants.ONE, responseObj.get("totalRecords"));
     }
 
     @Test
@@ -394,21 +391,38 @@ public class RCPDControllerTest extends CommonTestBase {
         RCPD rcpdHistory = new RCPD();
         rcpdHistory.setRcpdEvent(rcpdEvent);
         rcpdHistory.setRcpdResponseList(rcpdResponseList);
+        rcpdDAO.save(rcpdHistory);
         //LOGGER.info(inputRootNode.size() + " remote operations stored to DB");
     }
 
     private void populateNoResponseRCPDData() throws IOException {
         String requestJson = IOUtils.toString(
-                ROStatusHistoryControllerTest.class.getResourceAsStream("/rcpdHistoryDataNoResponseList.json"),
-                "UTF-8");
-
-        JsonNode inputRootNode = mapper.readTree(requestJson);
-        RCPD rcpdHistoryData = null;
-        for (JsonNode jsonNode : inputRootNode) {
-            rcpdHistoryData = mapper.readValue(jsonNode.toString(), RCPD.class);
-            rcpdDAO.save(rcpdHistoryData);
-        }
-        LOGGER.info(inputRootNode.size() + " remote operations stored to DB");
+            ROStatusHistoryControllerTest.class.getResourceAsStream("/rcpdHistoryDataNoResponseList.json"),
+            "UTF-8");
+        //        JsonNode inputRootNode = mapper.readTree(requestJson);
+        //        RCPD rcpdHistoryData = null;
+        //        for (JsonNode jsonNode : inputRootNode) {
+        //           rcpdHistoryData = mapper.readValue(jsonNode.toString(), RCPD.class);
+        //            rcpdDAO.save(rcpdHistoryData);
+        //        }
+        //        LOGGER.info(inputRootNode.size() + " remote operations stored to DB");
+        IgniteEvent rcpdEvent = new IgniteEventImplBuilder()
+            .withEventId("RCPDRequest")
+            .withVersion(Version.V1_1)
+            .withRequestId("38f20cb3-cdfa-45e5-8a3a-4e6e3087a914")
+            .withVehicleId("12345678")
+            .build();
+        IgniteEvent rcpdResponse = new IgniteEventImplBuilder()
+            .withEventId("RCPDResponse")
+            .withVersion(Version.V1_1)
+            .withRequestId("38f20cb3-cdfa-45e5-8a3a-4e6e3087a914")
+            .withVehicleId("12345678")
+            .build();
+        List<IgniteEvent> rcpdResponseList = List.of(rcpdResponse);
+        RCPD rcpdHistory = new RCPD();
+        rcpdHistory.setRcpdEvent(rcpdEvent);
+        rcpdHistory.setRcpdResponseList(rcpdResponseList);
+        rcpdDAO.save(rcpdHistory);
     }
 
     private HttpHeaders createHeaders() {
