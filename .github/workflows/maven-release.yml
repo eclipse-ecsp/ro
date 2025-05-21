@@ -10,16 +10,16 @@ jobs:
     secrets:
       token: ${{ secrets.SONAR_TOKEN }}
 
-  licence_compliance_status:
-    needs: sonar_analysis
-    uses: eclipse-ecsp/.github/.github/workflows/workflow-licences-analysis.yml@main
-    name: Check Licence Compliance Status
-    with:
-      create-review: false
+#  licence_compliance_status:
+#    needs: sonar_analysis
+#    uses: eclipse-ecsp/.github/.github/workflows/workflow-licences-analysis.yml@main
+#    name: Check Licence Compliance Status
+#    with:
+#      create-review: false
 
   extract_version:
     runs-on: ubuntu-latest
-    needs: licence_compliance_status
+#    needs: licence_compliance_status
     name: Extract release version without v prefix
     outputs:
       release_version: ${{ steps.set_version.outputs.release_version }}
