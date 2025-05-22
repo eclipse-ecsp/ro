@@ -6,6 +6,7 @@
     <version>1.0.0</version>
     <artifactId>ro</artifactId>
     <name>ro</name>
+    <description>RO library for ECSP project</description>
     <packaging>pom</packaging>
     <url>https://github.com/eclipse-ecsp/ro</url>
 
