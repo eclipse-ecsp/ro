@@ -88,7 +88,6 @@
             <groupId>org.eclipse.ecsp</groupId>
             <artifactId>transformers</artifactId>
             <version>1.0.0</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
