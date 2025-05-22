@@ -253,6 +253,7 @@
             <groupId>org.eclipse.ecsp</groupId>
             <artifactId>api-common</artifactId>
             <version>${api.common.version}</version>
+            <scope>test</scope>
             <exclusions>
             	<exclusion>
             		<groupId>org.slf4j</groupId>
