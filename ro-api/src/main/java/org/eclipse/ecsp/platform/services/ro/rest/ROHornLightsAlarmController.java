@@ -301,18 +301,19 @@ public class ROHornLightsAlarmController {
     }
 
     /**
-     * API v1.1 to Create remote Alarm Request.
+     * Create remote alarm request Api.
      *
-     * @param clientRequestId the client request id
-     * @param requestId       the request id
-     * @param sessionId       the session id
-     * @param origin          the origin
-     * @param ecuType         the ecu type
-     * @param vehicleArchType the vehicle arch type
-     * @param partnerId       the partner id
-     * @param userId          the user id
-     * @param vehicleId       the vehicle id
-     * @return @{@link ResponseEntity}
+     * @param clientRequestId       the client request id
+     * @param requestId             the request id
+     * @param sessionId             the session id
+     * @param origin                the origin
+     * @param ecuType               the ecu type
+     * @param vehicleArchType       the vehicle arch type
+     * @param partnerId             the partner id
+     * @param userId                the user id
+     * @param vehicleId             the vehicle id
+     * @param remoteOperationAlarmReq the remote operation alarm request
+     * @return the response entity
      * @throws InterruptedException the interrupted exception
      * @throws ExecutionException   the execution exception
      */
