@@ -101,16 +101,15 @@ public class ROStatusHistoryService {
             RO_EVENT_VEHICLE_ID);
 
     /**
-     * Gets remote op status.
+     * Retrieves the remote operation status for a given user, vehicle, and request ID.
      *
-     * @param userId        : userId
-     * @param vehicleId     : vehicleId
-     * @param roRequestId   : roRequestId
-     * @param responseLimit : responseLimit
-     * @return RO
-     * @throws InterruptedException   InterruptedException
-     * @throws ExecutionException     ExecutionException
-     * @throws EmptyResponseException EmptyResponseException
+     * @param userId        the user ID
+     * @param vehicleId     the vehicle ID
+     * @param roRequestId   the remote operation request ID
+     * @param responseLimit the maximum number of responses to return
+     * @return the RO object containing the remote operation status and response list
+     * @throws EmptyResponseException if no status is found for the given parameters
+     * @throws ForbiddenException     if the operation is not permitted
      */
     public Ro getRemoteOpStatus(String userId,
                                 String vehicleId, String roRequestId, Integer responseLimit)
