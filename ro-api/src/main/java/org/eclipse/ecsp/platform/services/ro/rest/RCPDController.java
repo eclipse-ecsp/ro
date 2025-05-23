@@ -121,6 +121,17 @@ public class RCPDController {
     }
 
     /**
+     * Health check endpoint.
+     * This method returns a success response to indicate that the service is running.
+     *
+     * @return ResponseEntity containing a success message.
+     */
+    @GetMapping("/v1/health")
+    public ResponseEntity<String> checkHealth() {
+        return ResponseEntity.ok("success");
+    }
+
+    /**
      * Create RCPD request response entity.
      *
      * @param clientRequestId the client request id
