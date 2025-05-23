@@ -10,6 +10,8 @@ ECSP project welcomes contributions and suggestions. Please follow the below ste
 - Review and Agree to [Eclipse Contributor Agreement](https://www.eclipse.org/legal/eca/).
 - More details about contribution can be found in [Eclipse Project Handbook - Contributors](https://www.eclipse.org/projects/handbook/#contributing-contributors) section.
 
+Please note that this project is released with a [Contributor Code of Conduct][coc].
+
 By participating in this project you agree to abide by its terms.
 
 [coc]: ./CODE_OF_CONDUCT.md
