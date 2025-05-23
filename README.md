@@ -4,11 +4,11 @@
 
 # Remote Operations
 
-[![Maven Build & Sonar Analysis](https://github.com/eclipse-ecsp/device-association/actions/workflows/maven-build.yml/badge.svg)](https://github.com/eclipse-ecsp/device-association/actions/workflows/maven-build.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=eclipse-ecsp_device-association&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=eclipse-ecsp_device-association)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=eclipse-ecsp_device-association&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=eclipse-ecsp_device-association)
-[![License Compliance](https://github.com/eclipse-ecsp/device-association/actions/workflows/licence-compliance.yaml/badge.svg)](https://github.com/eclipse-ecsp/device-association/actions/workflows/licence-compliance.yaml)
-[![Latest Release](https://img.shields.io/github/v/release/eclipse-ecsp/device-association?sort=semver)](https://github.com/eclipse-ecsp/device-association/releases)
+[![Maven Build & Sonar Analysis](https://github.com/eclipse-ecsp/ro/actions/workflows/maven-build.yml/badge.svg)](https://github.com/eclipse-ecsp/ro/actions/workflows/maven-build.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=eclipse-ecsp_ro&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=eclipse-ecsp_ro)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=eclipse-ecsp_ro&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=eclipse-ecsp_ro)
+[![License Compliance](https://github.com/eclipse-ecsp/ro/actions/workflows/licence-compliance.yaml/badge.svg)](https://github.com/eclipse-ecsp/ro/actions/workflows/licence-compliance.yaml)
+[![Latest Release](https://img.shields.io/github/v/release/eclipse-ecsp/ro?sort=semver)](https://github.com/eclipse-ecsp/ro/releases)
 
 Remote Operations is a service that can be used to push operations that can be executed in the vehicle and to get the response of the operation as notification.
 
