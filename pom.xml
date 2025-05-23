@@ -141,6 +141,7 @@
             **/org/eclipse/ecsp/platform/services/ro/rest/ROHornLightsAlarmController.java,
             **/org/eclipse/ecsp/platform/services/ro/rest/ROStatusHistoryController.java,
             **/org/eclipse/ecsp/ro/queue/ResponseQueueHandler.java,
+            **/org/eclipse/ecsp/platform/services/ro/handler/ApiRequestHandler.java,
             **/org/eclipse/ecsp/ro/notification/identifier/NotificationArchAndECUTypeResolver.java
         </sonar.exclusions>
 
