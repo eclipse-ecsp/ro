@@ -68,8 +68,13 @@ public class ApiRequestHandler implements HandlerInterceptor {
                              HttpServletResponse response,
                              Object handler)
             throws Exception {
+        String requestURI = request.getRequestURI();
 
-        LOGGER.debug("Handling Requested URI : {}", request.getRequestURI());
+        LOGGER.debug("Handling Requested URI : {}", requestURI);
+
+        if (requestURI.equals("/ro-api/v1/health") || requestURI.equals("/v1/health")) {
+            return true;
+        }
 
         final Map<String, String> pathVariables = (Map<String, String>) request
                 .getAttribute(HandlerMapping.URI_TEMPLATE_VARIABLES_ATTRIBUTE);
