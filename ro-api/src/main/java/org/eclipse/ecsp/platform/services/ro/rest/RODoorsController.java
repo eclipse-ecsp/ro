@@ -53,6 +53,7 @@ import org.eclipse.ecsp.platform.services.ro.service.RODoorsService;
 import org.eclipse.ecsp.platform.services.ro.service.Utils;
 import org.eclipse.ecsp.security.Security;
 import org.eclipse.ecsp.services.constants.EventAttribute;
+import org.eclipse.ecsp.threadlocal.PlatformThreadLocal;
 import org.eclipse.ecsp.utils.ApiUtils;
 import org.eclipse.ecsp.utils.logger.IgniteLogger;
 import org.eclipse.ecsp.utils.logger.IgniteLoggerFactory;
@@ -148,6 +149,7 @@ public class RODoorsController {
                 Utils.logForging(remoteDoorsRequest), Utils.logForging(userId),
                 Utils.logForging(vehicleId), Utils.logForging(partnerId),
                 Utils.logForging(ecuType), Utils.logForging(vehicleArchType));
+        LOGGER.info("PlatformId value :{}",PlatformThreadLocal.getPlatformId());
         RemoteOperationResponse remoteDoorsResponse = roDoorsService
                 .createRemoteDoorsRequest(userId, vehicleId, remoteDoorsRequest,
                         sessionId, origin, partnerId, ecuType, vehicleArchType);
