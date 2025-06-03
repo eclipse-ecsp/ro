@@ -149,7 +149,7 @@ public class RODoorsController {
                 Utils.logForging(remoteDoorsRequest), Utils.logForging(userId),
                 Utils.logForging(vehicleId), Utils.logForging(partnerId),
                 Utils.logForging(ecuType), Utils.logForging(vehicleArchType));
-        LOGGER.info("PlatformId value :{}",PlatformThreadLocal.getPlatformId());
+        LOGGER.info("PlatformId value :{}", PlatformThreadLocal.getPlatformId());
         RemoteOperationResponse remoteDoorsResponse = roDoorsService
                 .createRemoteDoorsRequest(userId, vehicleId, remoteDoorsRequest,
                         sessionId, origin, partnerId, ecuType, vehicleArchType);
