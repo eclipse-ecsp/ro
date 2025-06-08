@@ -50,6 +50,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -153,5 +154,20 @@ public class UtilsTest extends CommonTestBase {
                 - TimeZoneUtils.getCurrentUTCTimestamp();
         LOGGER.debug("firstScheduleTs: {}", firstScheduleTs);
         Assert.assertNotNull(zoneId);
+    }
+
+    @Test
+    public void testLogForging_withInput() {
+        String input = "Hello\nWorld\rTab\tEnd";
+        String expected = "Hello_World_Tab_End";
+
+        String result = Utils.logForging(input);
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    public void testLogForging_withNull() {
+        String result = Utils.logForging(null);
+        Assertions.assertNull(result);
     }
 }
