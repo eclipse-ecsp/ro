@@ -8,7 +8,6 @@ import org.eclipse.ecsp.domain.ro.Ro;
 import org.eclipse.ecsp.entities.AbstractIgniteEvent;
 import org.eclipse.ecsp.entities.IgniteEvent;
 import org.eclipse.ecsp.key.IgniteKey;
-import org.eclipse.ecsp.key.IgniteStringKey;
 import org.eclipse.ecsp.nosqldao.Updates;
 import org.eclipse.ecsp.ro.RoDAOMongoImpl;
 import org.eclipse.ecsp.services.utils.ServiceUtil;
@@ -24,12 +23,12 @@ import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
 
+import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.eq;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
-import static org.mockito.Mockito.any;
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 class AbstractQueueHandlerTest {
 
@@ -58,6 +57,10 @@ class AbstractQueueHandlerTest {
     @Mock
     private RQueue<AbstractIgniteEvent> queue;
 
+    private static final int DEFAULT_RO_FOREACH_TTL = 180000;
+
+    private static final int TTL_SUBTRACTION_MILLIS = 200000;
+
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
@@ -65,7 +68,7 @@ class AbstractQueueHandlerTest {
         queueHandler.roDAOMongoImpl = roDAOMongoImpl;
         queueHandler.redissonClient = redissonClient;
         queueHandler.serviceUtil = serviceUtil;
-        queueHandler.roForeachTTL = 180000;
+        queueHandler.roForeachTTL = DEFAULT_RO_FOREACH_TTL;
     }
 
     @Test
@@ -129,9 +132,9 @@ class AbstractQueueHandlerTest {
     }
 
     @Test
-    void testCheckTTLExpireANDForwad_expiresEventIfOld() {
+    void testCheckTTLExpireANDForward_expiresEventIfOld() {
         AbstractIgniteEvent event = mock(AbstractIgniteEvent.class);
-        long oldTimestamp = Instant.now().minusMillis(200000).toEpochMilli();
+        long oldTimestamp = Instant.now().minusMillis(TTL_SUBTRACTION_MILLIS).toEpochMilli();
         when(event.getTimestamp()).thenReturn(oldTimestamp);
         when(event.getVehicleId()).thenReturn("VIN123");
         when(event.getRequestId()).thenReturn("REQ123");

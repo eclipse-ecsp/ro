@@ -4,19 +4,17 @@ import org.eclipse.ecsp.analytics.stream.base.StreamProcessingContext;
 import org.eclipse.ecsp.domain.ro.RemoteOperationResponseV1_1;
 import org.eclipse.ecsp.entities.IgniteEvent;
 import org.eclipse.ecsp.key.IgniteKey;
-import org.eclipse.ecsp.entities.IgniteEventImpl;
-import org.eclipse.ecsp.entities.UserContext;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
 
-import java.util.List;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
-
 
 class OutboundUtilTest {
 
@@ -58,7 +56,7 @@ class OutboundUtilTest {
         );
 
         // Then
-        ArgumentCaptor<IgniteEvent> eventCaptor = ArgumentCaptor.forClass(IgniteEvent.class);
+        ArgumentCaptor.forClass(IgniteEvent.class);
         verify(mockContext).forward(any());
     }
 

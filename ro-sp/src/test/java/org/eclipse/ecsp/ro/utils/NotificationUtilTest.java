@@ -5,9 +5,7 @@ import org.eclipse.ecsp.domain.GenericCustomExtension;
 import org.eclipse.ecsp.domain.ro.RemoteOperationResponseV1_1;
 import org.eclipse.ecsp.domain.ro.RemoteOperationResponseV1_1.Response;
 import org.eclipse.ecsp.entities.IgniteEvent;
-import org.eclipse.ecsp.entities.IgniteEventImpl;
 import org.eclipse.ecsp.key.IgniteKey;
-import org.eclipse.ecsp.ro.domains.ROGenericNotificationEventDataV1_1;
 import org.eclipse.ecsp.ro.notification.NotificationResolver;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,15 +14,20 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 
+import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-import static org.mockito.Mockito.eq;
-import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoInteractions;
+import static org.mockito.Mockito.when;
+
+/**
+ * Test for {@link NotificationUtil} class.
+ */
 
 public class NotificationUtilTest {
 
@@ -49,6 +52,9 @@ public class NotificationUtilTest {
     @Mock
     private GenericCustomExtension customExtension;
 
+    /**
+     * Initializes mocks and sets up the test environment before each test case.
+     */
     @BeforeEach
     public void setUp() throws Exception {
         MockitoAnnotations.openMocks(this);
@@ -66,7 +72,7 @@ public class NotificationUtilTest {
 
     // Inline reflection helper inside the test class
     private void setField(Object target, String fieldName, Object value) throws Exception {
-        var field = target.getClass().getDeclaredField(fieldName);
+        Field field = target.getClass().getDeclaredField(fieldName);
         field.setAccessible(true);
         field.set(target, value);
     }

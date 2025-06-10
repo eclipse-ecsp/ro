@@ -5,7 +5,6 @@ import org.eclipse.ecsp.entities.AbstractIgniteEvent;
 import org.eclipse.ecsp.entities.IgniteEvent;
 import org.eclipse.ecsp.key.IgniteKey;
 import org.eclipse.ecsp.ro.RoDAOMongoImpl;
-import org.eclipse.ecsp.services.utils.ServiceUtil;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -20,13 +19,11 @@ import java.util.Iterator;
 
 
 import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.atLeastOnce;
 import static org.mockito.Mockito.eq;
-
-
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 class RequestQueueHandlerTest {
 
@@ -50,6 +47,10 @@ class RequestQueueHandlerTest {
 
     private IgniteEvent igniteEvent;
 
+    private static final int DEFAULT_RO_FOREACH_TTL = 180000;
+
+    private static final int TTL_SUBTRACTION_MILLIS = 200000;
+
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
@@ -58,7 +59,7 @@ class RequestQueueHandlerTest {
         when(igniteEvent.getVehicleId()).thenReturn("VIN1234");
         when(igniteEvent.getRequestId()).thenReturn("REQ-1");
         queue = mock(RQueue.class);
-        when(redissonClient.getQueue(anyString())).thenReturn((RQueue)queue);
+        when(redissonClient.getQueue(anyString())).thenReturn((RQueue) queue);
     }
 
     @Test
@@ -69,11 +70,11 @@ class RequestQueueHandlerTest {
         when(event.getVehicleId()).thenReturn("VIN1234");
         when(event.getRequestId()).thenReturn("REQ-1");
 
-        when(redissonClient.getQueue(anyString())).thenReturn((RQueue)queue);
+        when(redissonClient.getQueue(anyString())).thenReturn((RQueue) queue);
         when(queue.iterator()).thenReturn(Collections.singletonList(event).iterator());
         when(queue.size()).thenReturn(1);
 
-        requestQueueHandler.roForeachTTL = 180000L;
+        requestQueueHandler.roForeachTTL = DEFAULT_RO_FOREACH_TTL;
 
         requestQueueHandler.process(igniteKey, igniteEvent, context);
 
@@ -84,7 +85,7 @@ class RequestQueueHandlerTest {
     @Test
     void testProcess_withExpiredEvent_shouldUpdateStatusAndRemove() {
         AbstractIgniteEvent expiredEvent = mock(AbstractIgniteEvent.class);
-        long oldTimestamp = Instant.now().minusMillis(999999).toEpochMilli();
+        long oldTimestamp = Instant.now().minusMillis(TTL_SUBTRACTION_MILLIS).toEpochMilli();
 
         when(expiredEvent.getTimestamp()).thenReturn(oldTimestamp);
         when(expiredEvent.getVehicleId()).thenReturn("VIN1234");
@@ -94,11 +95,11 @@ class RequestQueueHandlerTest {
         when(iterator.hasNext()).thenReturn(true, false);
         when(iterator.next()).thenReturn(expiredEvent);
 
-        when(redissonClient.getQueue(anyString())).thenReturn((RQueue)queue);
+        when(redissonClient.getQueue(anyString())).thenReturn((RQueue) queue);
         when(queue.iterator()).thenReturn(iterator);
         when(queue.size()).thenReturn(1);
 
-        requestQueueHandler.roForeachTTL = 180000L;
+        requestQueueHandler.roForeachTTL = DEFAULT_RO_FOREACH_TTL;
 
         requestQueueHandler.process(igniteKey, igniteEvent, context);
 
