@@ -1,24 +1,32 @@
 package org.eclipse.ecsp.ro.queue;
 
 import org.eclipse.ecsp.analytics.stream.base.StreamProcessingContext;
-import org.eclipse.ecsp.domain.ro.ROStatus;
 import org.eclipse.ecsp.entities.AbstractIgniteEvent;
 import org.eclipse.ecsp.entities.IgniteEvent;
 import org.eclipse.ecsp.key.IgniteKey;
-import org.eclipse.ecsp.key.IgniteStringKey;
-import org.eclipse.ecsp.nosqldao.Updates;
 import org.eclipse.ecsp.ro.RoDAOMongoImpl;
 import org.eclipse.ecsp.services.utils.ServiceUtil;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.*;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.redisson.api.RQueue;
 import org.redisson.api.RedissonClient;
 
 import java.time.Instant;
-import java.util.*;
+import java.util.Collections;
+import java.util.Iterator;
 
-import static org.mockito.Mockito.*;
+
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.atLeastOnce;
+import static org.mockito.Mockito.eq;
+
+
 
 class RequestQueueHandlerTest {
 
@@ -33,9 +41,6 @@ class RequestQueueHandlerTest {
 
     @Mock
     private RQueue<AbstractIgniteEvent> queue;
-
-    @Mock
-    private ServiceUtil serviceUtil;
 
     @Mock
     private StreamProcessingContext context;

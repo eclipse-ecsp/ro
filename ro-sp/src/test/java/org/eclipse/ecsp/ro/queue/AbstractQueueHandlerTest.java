@@ -14,14 +14,22 @@ import org.eclipse.ecsp.ro.RoDAOMongoImpl;
 import org.eclipse.ecsp.services.utils.ServiceUtil;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.*;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.redisson.api.RQueue;
 import org.redisson.api.RedissonClient;
 
 import java.time.Instant;
-import java.util.*;
+import java.util.List;
+import java.util.Optional;
 
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.never;
 
 class AbstractQueueHandlerTest {
 
