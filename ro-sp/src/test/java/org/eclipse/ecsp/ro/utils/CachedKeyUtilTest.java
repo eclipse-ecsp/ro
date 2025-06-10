@@ -8,15 +8,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+/**
+ * Test for {@link CachedKeyUtil} class.
+ */
 
 class CachedKeyUtilTest {
-
-    /*@Test
-    void testPrivateConstructor_shouldThrowException() throws Exception {
-        var constructor = CachedKeyUtil.class.getDeclaredConstructor();
-        constructor.setAccessible(true);
-        assertThrows(UnsupportedOperationException.class, constructor::newInstance);
-    }*/
 
     @Test
     void getEngineStatusKey_shouldReturnCorrectKey() {
