@@ -10,6 +10,7 @@ import org.eclipse.ecsp.entities.IgniteEvent;
 import org.eclipse.ecsp.key.IgniteKey;
 import org.eclipse.ecsp.nosqldao.Updates;
 import org.eclipse.ecsp.ro.RoDAOMongoImpl;
+import org.eclipse.ecsp.ro.utils.TimeZoneUtils;
 import org.eclipse.ecsp.services.utils.ServiceUtil;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,11 +19,9 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.redisson.api.RQueue;
 import org.redisson.api.RedissonClient;
-
 import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
-
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.eq;
 import static org.mockito.Mockito.mock;
@@ -30,6 +29,9 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+/**
+ * Test for {@link AbstractQueueHandler} class.
+ */
 class AbstractQueueHandlerTest {
 
     static class TestQueueHandler extends AbstractQueueHandler {

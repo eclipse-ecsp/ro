@@ -3,7 +3,6 @@ package org.eclipse.ecsp.ro.utils;
 import org.eclipse.ecsp.entities.IgniteEvent;
 import org.eclipse.ecsp.ro.constants.Constants;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -11,7 +10,6 @@ import static org.mockito.Mockito.when;
 /**
  * Test for {@link CachedKeyUtil} class.
  */
-
 class CachedKeyUtilTest {
 
     @Test

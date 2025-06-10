@@ -5,6 +5,7 @@ import org.eclipse.ecsp.entities.AbstractIgniteEvent;
 import org.eclipse.ecsp.entities.IgniteEvent;
 import org.eclipse.ecsp.key.IgniteKey;
 import org.eclipse.ecsp.ro.RoDAOMongoImpl;
+import org.eclipse.ecsp.ro.utils.TimeZoneUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -12,12 +13,9 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.redisson.api.RQueue;
 import org.redisson.api.RedissonClient;
-
 import java.time.Instant;
 import java.util.Collections;
 import java.util.Iterator;
-
-
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.atLeastOnce;
 import static org.mockito.Mockito.eq;
@@ -25,6 +23,9 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+/**
+ * Test for {@link RequestQueueHandler} class.
+ */
 class RequestQueueHandlerTest {
 
     @InjectMocks

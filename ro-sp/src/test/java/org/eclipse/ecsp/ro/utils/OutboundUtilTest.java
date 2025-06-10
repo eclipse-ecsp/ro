@@ -7,11 +7,9 @@ import org.eclipse.ecsp.key.IgniteKey;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
-
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -19,7 +17,6 @@ import static org.mockito.Mockito.verify;
 /**
  * Test for {@link OutboundUtil} class.
  */
-
 class OutboundUtilTest {
 
     private OutboundUtil outboundUtil;

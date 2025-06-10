@@ -2,9 +2,7 @@ package org.eclipse.ecsp.ro.utils;
 
 import org.eclipse.ecsp.ro.queue.DeviceMessageFailureQueueHandler;
 import org.junit.jupiter.api.Test;
-
 import java.time.ZoneId;
-
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -12,7 +10,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 /**
  * Test for {@link TimeZoneUtils} class.
  */
-
 public class TimeZoneUtilsTest {
 
     private static final double NYlat = 40.7128;
