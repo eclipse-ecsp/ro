@@ -57,4 +57,39 @@ public class StockingRuleConfigUtilTest {
         Map<String, String> resultMap = StockingRuleConfigUtil.getStockingRuleConfig(input);
         Assertions.assertEquals("vehicle_archType1_precondition", resultMap.get("mappingName"));
     }
+
+    @Test
+    public void getStockingRuleConfig_withMissingKey() {
+        // Missing STOCKING_RULE_CONFIGURATIONOBJECT key
+        Map<String, Object> input = new HashMap<>();
+        Map<String, String> resultMap = StockingRuleConfigUtil.getStockingRuleConfig(input);
+        Assertions.assertTrue(resultMap == null || resultMap.isEmpty(), "Expected empty map when key is missing");
+    }
+
+    @Test
+    public void getStockingRuleConfig_withNullInput() {
+        // Null input
+        Map<String, String> resultMap = StockingRuleConfigUtil.getStockingRuleConfig(null);
+        Assertions.assertTrue(resultMap == null || resultMap.isEmpty(), "Expected empty map when input is null");
+    }
+
+    @Test
+    public void getStockingRuleConfig_withInvalidValue() {
+        // Value that can't be converted to string
+        Map<String, Object> input = new HashMap<>();
+        input.put(Constants.STOCKING_RULE_CONFIGURATIONOBJECT, new Object());
+        Map<String, String> resultMap = StockingRuleConfigUtil.getStockingRuleConfig(input);
+        Assertions.assertTrue(resultMap == null || resultMap.isEmpty(), "Expected empty map on parse error");
+    }
+
+    @Test
+    public void getStockingRuleConfig_withMalformedJsonString() {
+        // Manually passing malformed JSON string
+        Map<String, Object> input = new HashMap<>();
+        input.put(Constants.STOCKING_RULE_CONFIGURATIONOBJECT, "{invalidJson: }");
+        Map<String, String> resultMap = StockingRuleConfigUtil.getStockingRuleConfig(input);
+        Assertions.assertTrue(resultMap == null || resultMap.isEmpty(), "Expected empty map for invalid JSON string");
+    }
+
+
 }

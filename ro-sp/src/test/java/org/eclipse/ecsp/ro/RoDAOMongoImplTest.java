@@ -38,6 +38,8 @@
 package org.eclipse.ecsp.ro;
 
 import io.prometheus.client.CollectorRegistry;
+import org.eclipse.ecsp.domain.ro.Ro;
+import org.eclipse.ecsp.nosqldao.IgniteQuery;
 import org.eclipse.ecsp.testutils.CommonTestBase;
 import org.junit.Test;
 import org.junit.jupiter.api.AfterEach;
@@ -51,6 +53,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
+import java.util.Optional;
 
 /**
  * Tests for {@link RoDAOMongoImpl}.
@@ -81,4 +84,45 @@ public class RoDAOMongoImplTest extends CommonTestBase {
         Assertions.assertNull(roDAOMongo.getLatesRIEntityForNotification("sessionId", "vehicleId"));
     }
 
+    @Test
+    public void testGetRIEntityByFieldName_ReturnsEmpty() {
+        Optional<Ro> result = roDAOMongo.getRIEntityByFieldName("someRequestID", "someVehicleId");
+        Assertions.assertTrue(result.isEmpty());
+    }
+
+    @Test
+    public void testPrepareIgniteQueryForRoRequest() {
+        IgniteQuery query = roDAOMongo.prepareIgniteQueryForRoRequest("roReqId", "vehicleId");
+        Assertions.assertNotNull(query);
+    }
+
+    @Test
+    public void testPrepareIgniteQueryBySessionIdANDMsgId() {
+        IgniteQuery query = roDAOMongo.prepareIgniteQueryBySessionIdANDMsgId("vehicleId", "sessionId", "msgId");
+        Assertions.assertNotNull(query);
+    }
+
+    @Test
+    public void testPrepareIgniteQueryForRIRequestWithSessionId() {
+        IgniteQuery query = roDAOMongo.prepareIgniteQueryForRIRequestWithSessionId("sessionId", "vehicleid");
+        Assertions.assertNotNull(query);
+    }
+
+    @Test
+    public void testGetROEntityByFieldNameByRoReqIdExceptACV_ReturnsEmpty() {
+        Optional<Ro> result = roDAOMongo.getROEntityByFieldNameByRoReqIdExceptACV("vehicleId", "roRequestId");
+        Assertions.assertTrue(result.isEmpty());
+    }
+
+    @Test
+    public void testGetROEntityByFieldNameByRoReqId_ReturnsEmpty() {
+        Optional<Ro> result = roDAOMongo.getROEntityByFieldNameByRoReqId("vehicleId", "roRequestId");
+        Assertions.assertTrue(result.isEmpty());
+    }
+
+    @Test
+    public void testGetROEntityByFieldNameByBizIdExceptACV_ReturnsEmpty() {
+        Optional<Ro> result = roDAOMongo.getROEntityByFieldNameByBizIdExceptACV("vehicleId", "sessionId");
+        Assertions.assertTrue(result.isEmpty());
+    }
 }

@@ -124,25 +124,14 @@
             **/org/eclipse/ecsp/platform/services/ro/constant/*.java,
             **/org/eclipse/ecsp/platform/services/ro/service/*.java,
             **/org/eclipse/ecsp/platform/services/ro/configure/*.java,
-            **/org/eclipse/ecsp/ro/utils/NotificationUtil.java,
-            **/org/eclipse/ecsp/ro/queue/AbstractQueueHandler.java,
-            **/org/eclipse/ecsp/ro/queue/RequestQueueHandler.java,
             **/org/eclipse/ecsp/ro/RoScheduleV2DAOMongoImpl.java,
             **/org/eclipse/ecsp/ro/utils/CacheUtil.java,
-            **/org/eclipse/ecsp/ro/utils/CachedKeyUtil.java,
-            **/org/eclipse/ecsp/ro/utils/OutboundUtil.java,
-            **/org/eclipse/ecsp/ro/queue/DeviceMessageFailureQueueHandler.java,
-            **/org/eclipse/ecsp/ro/utils/Utils.java,
-            **/org/eclipse/ecsp/ro/utils/TimeZoneUtils.java,
-            **/org/eclipse/ecsp/ro/RoDAOMongoImpl.java,
             **/org/eclipse/ecsp/platform/services/ro/rest/RCPDController.java,
             **/org/eclipse/ecsp/platform/services/ro/rest/ROHoodTrunkLiftgateController.java,
-            **/org/eclipse/ecsp/ro/notification/StockingRuleNotificationResolver.java,
             **/org/eclipse/ecsp/platform/services/ro/rest/ROHornLightsAlarmController.java,
             **/org/eclipse/ecsp/platform/services/ro/rest/ROStatusHistoryController.java,
             **/org/eclipse/ecsp/ro/queue/ResponseQueueHandler.java,
             **/org/eclipse/ecsp/platform/services/ro/handler/ApiRequestHandler.java,
-            **/org/eclipse/ecsp/ro/notification/identifier/NotificationArchAndECUTypeResolver.java
         </sonar.exclusions>
 
         <!-- Jacoco Plugin Properties -->
