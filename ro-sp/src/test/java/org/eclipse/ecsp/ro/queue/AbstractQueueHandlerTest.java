@@ -10,7 +10,6 @@ import org.eclipse.ecsp.entities.IgniteEvent;
 import org.eclipse.ecsp.key.IgniteKey;
 import org.eclipse.ecsp.nosqldao.Updates;
 import org.eclipse.ecsp.ro.RoDAOMongoImpl;
-import org.eclipse.ecsp.ro.utils.TimeZoneUtils;
 import org.eclipse.ecsp.services.utils.ServiceUtil;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

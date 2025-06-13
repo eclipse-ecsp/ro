@@ -24,7 +24,7 @@ import static org.mockito.Mockito.when;
 /**
  * Test for {@link NotificationUtil} class.
  */
-public class NotificationUtilTest {
+class NotificationUtilTest {
 
     @InjectMocks
     private NotificationUtil notificationUtil;
@@ -51,7 +51,7 @@ public class NotificationUtilTest {
      * Initializes mocks and sets up the test environment before each test case.
      */
     @BeforeEach
-    public void setUp() throws Exception {
+    void setUp() throws Exception {
         MockitoAnnotations.openMocks(this);
 
         notificationUtil = new NotificationUtil();
@@ -73,7 +73,7 @@ public class NotificationUtilTest {
     }
 
     @Test
-    public void testSendRONotification_withValidInput_shouldForwardEvent() {
+    void testSendRONotification_withValidInput_shouldForwardEvent() {
         when(igniteEvent.getVehicleId()).thenReturn("veh123");
         when(igniteEvent.getBizTransactionId()).thenReturn("biz123");
 
@@ -96,7 +96,7 @@ public class NotificationUtilTest {
     }
 
     @Test
-    public void testSendRONotification_withNonWhitelistedOrigin_shouldNotSend() {
+    void testSendRONotification_withNonWhitelistedOrigin_shouldNotSend() {
         notificationUtil.sendRONotification(
                 igniteKey,
                 igniteEvent,
@@ -110,7 +110,7 @@ public class NotificationUtilTest {
     }
 
     @Test
-    public void testSendRONotification_withEmptyNotificationId_shouldSkip() {
+    void testSendRONotification_withEmptyNotificationId_shouldSkip() {
         when(response.getRoRequestId()).thenReturn("ro-req-1");
 
         notificationUtil.sendRONotification(

@@ -16,7 +16,6 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.test.util.ReflectionTestUtils;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -25,7 +24,7 @@ import static org.mockito.Mockito.when;
  * RCPDRequestProcessorTest - This class contains unit tests for the RCPDRequestProcessor.
  */
 @ExtendWith(MockitoExtension.class)
-public class RCPDRequestProcessorTest {
+class RCPDRequestProcessorTest {
 
     // Mock dependencies using @Mock
     @Mock
@@ -69,9 +68,9 @@ public class RCPDRequestProcessorTest {
         IgniteEventImpl mockRcpdReqImpl = mock(IgniteEventImpl.class);
 
         when(rcpdEventHandler.processRCPDRequest(
-                eq(mockKey),
-                eq(mockValue),
-                eq(serviceUtil)
+                mockKey,
+                mockValue,
+                serviceUtil
         )).thenReturn(mockRcpdReqImpl);
 
         // Act
