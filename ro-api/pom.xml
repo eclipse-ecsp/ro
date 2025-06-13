@@ -6,10 +6,12 @@
     <parent>
         <groupId>org.eclipse.ecsp</groupId>
         <artifactId>ro</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </parent>
     <artifactId>ro-api</artifactId>
     <name>ro-api</name>
+    <description>ro library for ECSP project</description>
+    <url>https://github.com/eclipse-ecsp/ro</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <start-class>org.eclipse.ecsp.platform.services.ro.Application</start-class>

@@ -5,10 +5,12 @@
     <parent>
         <groupId>org.eclipse.ecsp</groupId>
         <artifactId>ro</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </parent>
     <artifactId>ro-sp</artifactId>
     <name>ro-sp</name>
+    <description>ro library for ECSP project</description>
+    <url>https://github.com/eclipse-ecsp/ro</url>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
