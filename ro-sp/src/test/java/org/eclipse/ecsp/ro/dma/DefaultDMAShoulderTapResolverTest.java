@@ -15,7 +15,7 @@ class DefaultDMAShoulderTapResolverTest {
     private DefaultDMAShoulderTapResolver resolver;
 
     @BeforeEach
-    void setUp() throws Exception {
+    void setUp() {
         resolver = new DefaultDMAShoulderTapResolver();
     }
 

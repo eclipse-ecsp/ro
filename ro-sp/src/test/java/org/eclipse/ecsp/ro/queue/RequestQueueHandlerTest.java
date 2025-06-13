@@ -5,7 +5,6 @@ import org.eclipse.ecsp.entities.AbstractIgniteEvent;
 import org.eclipse.ecsp.entities.IgniteEvent;
 import org.eclipse.ecsp.key.IgniteKey;
 import org.eclipse.ecsp.ro.RoDAOMongoImpl;
-import org.eclipse.ecsp.ro.utils.TimeZoneUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -18,7 +17,6 @@ import java.util.Collections;
 import java.util.Iterator;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.atLeastOnce;
-import static org.mockito.Mockito.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -105,6 +103,6 @@ class RequestQueueHandlerTest {
         requestQueueHandler.process(igniteKey, igniteEvent, context);
 
         // Should call updateEntityByROStatus
-        verify(roDAOMongoImpl, atLeastOnce()).getROEntityByFieldNameByRoReqIdExceptACV(eq("VIN1234"), eq("REQ-2"));
+        verify(roDAOMongoImpl, atLeastOnce()).getROEntityByFieldNameByRoReqIdExceptACV("VIN1234", "REQ-2");
     }
 }
